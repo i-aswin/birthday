@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#eef1e9"><title>Happy Birthday Anjuma ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+:root{--ink:#120d20;--plum:#24152f;--rose:#f2a9c4;--rose2:#d878a0;--cream:#fff4ed;--gold:#f1d6a1;--muted:#cbbccc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--cream);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 48% 0%,#5b2c58 0,transparent 47%),radial-gradient(ellipse at 100% 70%,#292048 0,transparent 42%),#120d20}
+#sky{position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden}.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff3e8;animation:twinkle 3s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.12;transform:scale(.6)}50%{opacity:.95;transform:scale(1.5)}}
+button{font:inherit;cursor:pointer}.screen{min-height:100svh;padding:32px 20px;display:flex;align-items:center;justify-content:center;position:relative}.wrap{width:min(760px,100%);margin:auto;text-align:center}
+.eyebrow{text-transform:uppercase;letter-spacing:.25em;font-size:.66rem;color:var(--gold)}h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;font-weight:500}h1{font-size:clamp(3.4rem,12vw,7.5rem);line-height:.83;margin:25px 0}h1 em,h2 em{font-weight:400;color:var(--rose)}h2{font-size:clamp(2.7rem,8vw,5.3rem);line-height:.9;margin:18px 0}p{color:var(--muted);line-height:1.85;font-size:.97rem}.lead{max-width:500px;margin:0 auto 28px}.tiny{font-size:.75rem;color:#a998b3}
+.primary{border:0;border-radius:99px;padding:15px 24px;background:linear-gradient(115deg,#f7c4d5,#f0d7b1);color:#29152b;font-weight:700;box-shadow:0 10px 35px #f2a9c425;transition:.25s}.primary:hover{transform:translateY(-3px);box-shadow:0 15px 42px #f2a9c455}.secondary{border:1px solid #ffffff35;border-radius:99px;background:#ffffff07;color:var(--cream);padding:12px 20px}
+.heart{font-size:3.3rem;color:var(--rose);filter:drop-shadow(0 0 20px #f2a9c477);animation:pulse 2s infinite}@keyframes pulse{0%,100%{transform:scale(1)}15%{transform:scale(1.12)}30%{transform:scale(1)}}
+#start .small-star{font-size:1.3rem;color:var(--gold);margin:0 8px}
+.topline{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--rose),var(--gold));width:0;z-index:30;transition:width .4s}
+.sound{position:fixed;right:12px;top:12px;z-index:20;border:1px solid #ffffff2c;border-radius:99px;padding:9px 12px;background:#180f24dc;color:var(--cream);font-size:.72rem;backdrop-filter:blur(10px)}
+.chapter{padding:86px 18px;min-height:80svh;display:flex;align-items:center}.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px auto;max-width:680px}
+.choice{min-height:145px;border:1px solid #ffffff22;border-radius:17px;background:linear-gradient(145deg,#ffffff12,#ffffff04);color:var(--cream);padding:16px 10px;transition:.25s}.choice:hover,.choice.selected{border-color:#f2a9c4aa;transform:translateY(-3px);background:#f2a9c412}.choice .ico{font-size:1.9rem;display:block;margin-bottom:10px}.choice b{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:500}.choice .answer{display:none;font-size:.76rem;color:#f5d7e3;line-height:1.55;margin-top:10px}.choice.selected .answer{display:block}
+.progress-label{font-size:.7rem;letter-spacing:.15em;color:#bca9c2;text-transform:uppercase}.bar{height:3px;background:#ffffff17;border-radius:9px;max-width:260px;margin:13px auto 25px;overflow:hidden}.bar span{display:block;width:0;height:100%;background:var(--rose);transition:width .5s}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:30px auto;max-width:760px}.photo{padding:7px 7px 18px;background:#fff7ed;border-radius:4px;color:#2d2030;box-shadow:0 12px 32px #0003;transform:rotate(var(--rot));transition:transform .35s;cursor:pointer;position:relative}.photo:nth-child(3n){--rot:2deg}.photo:nth-child(3n+1){--rot:-2deg}.photo:nth-child(3n+2){--rot:1deg}.photo:hover{transform:rotate(0) scale(1.035);z-index:2}.photo img{width:100%;height:190px;object-fit:cover;display:block;background:#d9c5d3}.photo figcaption{font-family:'Cormorant Garamond',serif;font-size:1.05rem;padding-top:9px}.photo .caption-detail{display:none;font-family:'DM Sans',sans-serif;font-size:.72rem;color:#645262;line-height:1.4;padding:5px 4px 0}.photo.reveal .caption-detail{display:block}
+#photoModal{position:fixed;inset:0;background:#08050deF;display:none;z-index:40;align-items:center;justify-content:center;padding:20px}#photoModal.show{display:flex}.modal-inner{max-width:520px;width:100%;text-align:center}.modal-inner img{max-height:60svh;max-width:100%;border:8px solid #fff7ed;object-fit:contain}.modal-inner p{color:#f4d9e6}
+.letter{max-width:560px;margin:28px auto;padding:30px 28px;border:1px solid #eacb9a55;border-radius:4px;background:linear-gradient(135deg,#fff8f00d,#f2a9c409);text-align:left;box-shadow:0 20px 60px #0002;position:relative}.letter:before{content:'A LETTER FOR ANJUMA';position:absolute;top:-9px;left:20px;padding:0 10px;background:#1b1025;color:var(--gold);font-size:.62rem;letter-spacing:.2em}.letter p{color:#f0dfe9}.letter .sign{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--rose)}
+.gamepanel{max-width:510px;margin:25px auto;padding:25px;border:1px solid #ffffff22;border-radius:22px;background:#ffffff08}.gameprompt{font-family:'Cormorant Garamond',serif;font-size:1.7rem;color:var(--cream);line-height:1.2}.gamechoices{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0}.gamechoices button{border:1px solid #ffffff26;border-radius:13px;padding:13px 8px;color:var(--cream);background:#ffffff08}.gamechoices button:active,.gamechoices button:hover{border-color:var(--rose);background:#f2a9c412}.feedback{min-height:30px;font-size:.85rem;color:var(--gold)}
+#starGame{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:22px auto;max-width:380px}.hiddenstar{width:54px;height:54px;border:1px solid #f2a9c444;background:#ffffff08;border-radius:50%;font-size:1.4rem;color:var(--gold);transition:.25s}.hiddenstar.found{background:#f2a9c422;box-shadow:0 0 25px #f2a9c455;transform:scale(1.1)}
+.gift{width:118px;height:104px;position:relative;margin:30px auto 20px;cursor:pointer;transition:.4s}.gift-box{position:absolute;bottom:0;width:118px;height:75px;background:linear-gradient(120deg,#c55282,#84335f);border-radius:4px 4px 10px 10px;box-shadow:0 15px 45px #e25d8c2a}.gift-lid{position:absolute;top:18px;left:-7px;width:132px;height:24px;background:linear-gradient(120deg,#f2a9c4,#d96d9a);border-radius:4px;z-index:2;transition:.55s}.gift-ribbon{position:absolute;left:49px;bottom:0;width:20px;height:101px;background:var(--gold);z-index:1}.gift-bow{position:absolute;top:0;left:38px;width:25px;height:20px;border:6px solid var(--gold);border-radius:80% 20% 80% 20%;transform:rotate(25deg);z-index:3}.gift.open .gift-lid{transform:translate(-24px,-56px) rotate(-18deg)}#giftText{display:none;font-family:'Cormorant Garamond',serif;color:var(--rose);font-size:2rem;line-height:1.2}#giftText.show{display:block;animation:appear .8s both}@keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:50;overflow:hidden}.confetti{position:absolute;top:-20px;width:7px;height:13px;animation:fall 3s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.1}}
+footer{text-align:center;padding:25px 15px 45px;color:#84718e;font-size:.7rem}
+
+.balloon-field{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:22px 16px;max-width:980px;margin:30px auto 22px;align-items:start}
+.balloon-item{display:flex;flex-direction:column;align-items:center;min-width:0;gap:12px}
+.balloon-item .balloon{flex:0 0 auto}
+.balloon-item .balloon-reveal{width:88px;max-width:100%;box-sizing:border-box;padding:4px;margin:0 auto}
+.balloon-item .balloon-reveal img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 18%;border-radius:7px}
+.balloon-item .balloon-reveal figcaption{text-align:center;color:#718071;font-size:.78rem;padding:7px 2px 2px}
+@media(max-width:620px){.balloon-field{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 10px}.balloon{width:54px;height:70px}}
+@media(max-width:380px){.balloon-field{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.balloon{width:62px;height:78px;border:0;border-radius:50% 50% 46% 46%;position:relative;color:#fff;font-size:1.1rem;box-shadow:inset -8px -8px 0 #00000010,0 10px 24px #0002;transition:transform .25s,opacity .3s}
+.balloon:after{content:"";position:absolute;bottom:-12px;left:29px;width:2px;height:17px;background:#ffffff70}
+.balloon:nth-child(4n+1){background:linear-gradient(135deg,#f4b5ce,#c85f91)}.balloon:nth-child(4n+2){background:linear-gradient(135deg,#e9d0a2,#bd8d56)}.balloon:nth-child(4n+3){background:linear-gradient(135deg,#c8a9ec,#8064b2)}.balloon:nth-child(4n){background:linear-gradient(135deg,#e9a4a8,#a94565)}
+.balloon.popped{transform:scale(1.4) rotate(18deg);opacity:0;pointer-events:none}
+.present-box{width:110px;height:92px;position:relative;margin:24px auto;cursor:pointer;display:none}.present-box.show{display:block;animation:appear .6s both}.present-box .base{position:absolute;bottom:0;width:110px;height:65px;background:linear-gradient(120deg,#d76b99,#9c3e6d);border-radius:4px 4px 10px 10px}.present-box .lid{position:absolute;top:15px;left:-6px;width:122px;height:22px;background:linear-gradient(120deg,#f5bfd3,#e68cb1);border-radius:4px;transition:.5s;z-index:2}.present-box .ribbon{position:absolute;left:46px;bottom:0;width:18px;height:90px;background:var(--gold);z-index:1}.present-box.open .lid{transform:translate(-17px,-42px) rotate(-17deg)}
+#firstGiftMessage{display:none;max-width:470px;margin:20px auto;color:var(--rose);font:1.8rem/1.2 'Cormorant Garamond',serif}#firstGiftMessage.show{display:block;animation:appear .7s both}
+.ticket-card{max-width:440px;margin:28px auto;padding:18px;border-radius:20px;border:1px solid #ffffff24;background:#fff;color:#211a25;text-align:left;box-shadow:0 20px 60px #0004}
+.ticket-card img.ticket-shot{display:block;width:100%;height:auto;border-radius:10px;margin:12px auto}
+.ticket-details{font-size:.9rem;line-height:1.7;color:#4c4350}.ticket-qr{width:190px;height:190px;object-fit:contain;background:white;padding:8px;border-radius:10px;margin:15px auto}
+.ticket-warning{font-size:.78rem;color:#cbbccc;line-height:1.6;max-width:500px;margin:12px auto}
+
+@media(max-width:560px){.card-grid{grid-template-columns:1fr;max-width:340px}.choice{min-height:100px}.choice .ico{display:inline-block;margin:0 8px 0 0}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.photo img{height:175px}.letter{padding:25px 20px}.chapter{padding:70px 16px}.gamechoices{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+/* MODERN REDESIGN — editorial, cinematic, mobile-first */
+:root{
+ --ink:#090a12;--plum:#151522;--rose:#ff9db8;--rose2:#ff6f9e;
+ --cream:#fff8f5;--gold:#f5d8a6;--muted:#c4c1d0;
+ --line:rgba(255,255,255,.13);
+}
+body{background:#090a12;color:#fff8f5;font-family:'DM Sans',sans-serif;letter-spacing:-.01em}
+body:before{background:
+ radial-gradient(ellipse at 50% -12%,rgba(120,66,119,.32),transparent 50%),
+ radial-gradient(ellipse at 100% 35%,rgba(56,68,112,.22),transparent 45%),
+ linear-gradient(180deg,#090a12 0%,#11101c 52%,#090a12 100%)}
+#sky .star{background:#ffdce9;opacity:.45}
+.screen{min-height:100svh;padding:70px 22px 54px}
+.wrap{width:min(820px,100%)}
+.hero-kicker{display:inline-flex;align-items:center;gap:9px;padding:9px 13px;border:1px solid var(--line);border-radius:99px;color:#d7cfdf;font-size:.62rem;letter-spacing:.16em;font-weight:600;background:#ffffff06;backdrop-filter:blur(12px)}
+.live-dot{width:6px;height:6px;border-radius:50%;background:#ff91b4;box-shadow:0 0 14px #ff91b4}
+.hero-mosaic{height:clamp(190px,31vw,300px);max-width:520px;margin:24px auto 25px;position:relative}
+.hero-photo{position:absolute;overflow:hidden;border:4px solid #11101c;border-radius:20px;background:#242332;box-shadow:0 22px 55px #0007}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-photo-main{width:39%;height:88%;left:31%;top:2%;z-index:2;transform:rotate(-3deg)}
+.hero-photo-side{width:29%;height:70%;left:9%;top:20%;transform:rotate(-9deg)}
+.hero-photo-bottom{width:28%;height:68%;right:8%;top:18%;transform:rotate(7deg)}
+.mosaic-sticker{position:absolute;z-index:4;right:15%;bottom:0;background:#f8d6e2;color:#332033;padding:9px 12px;border-radius:99px;font-size:.68rem;font-weight:700;transform:rotate(-5deg);box-shadow:0 8px 24px #0004}
+h1{font-family:'DM Sans',sans-serif;font-size:clamp(3.2rem,10vw,6.7rem);line-height:.94;font-weight:700;letter-spacing:-.075em;margin:12px 0 20px}
+h1 em{font-style:normal;color:var(--rose)}
+.hero-serif{font-family:'Cormorant Garamond',serif;font-weight:500;font-style:italic;letter-spacing:-.045em;color:#ffabc4}
+h2{font-family:'DM Sans',sans-serif;font-size:clamp(2.35rem,7.2vw,4.6rem);line-height:.98;font-weight:650;letter-spacing:-.065em;margin:18px 0}
+h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;color:var(--rose);letter-spacing:-.035em}
+p{color:#c4c1d0;font-size:.94rem;line-height:1.8;letter-spacing:0}
+.lead{max-width:460px;font-size:1rem;margin:0 auto 28px}
+.primary{background:#ffabc4;color:#20111d;border-radius:14px;padding:15px 22px;box-shadow:0 10px 36px #ff91b41c;font-size:.9rem;transition:transform .2s,background .2s}
+.primary:hover{transform:translateY(-2px);background:#ffc2d4;box-shadow:0 14px 40px #ff91b430}
+.secondary{border:1px solid var(--line);border-radius:14px;background:#ffffff08;color:#fff8f5;padding:13px 18px}
+.hero-meta{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:25px}
+.hero-meta span{font-size:.66rem;color:#c6c0d1;border:1px solid var(--line);border-radius:99px;padding:8px 10px;background:#ffffff04}
+.heart{display:none}
+.sound{top:14px;right:14px;border:1px solid var(--line);border-radius:12px;background:#11111de8;color:#f7eaf1;padding:10px 12px}
+.topline{height:2px;background:linear-gradient(90deg,#ff8eae,#d7b7ff,#f4d6a4)}
+.chapter{min-height:75svh;padding:100px 20px}
+.eyebrow{color:#ffabc4;font-size:.65rem;font-weight:700;letter-spacing:.18em}
+.card-grid{gap:12px}
+.choice{border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#ffffff0b,#ffffff03);min-height:145px}
+.choice:hover,.choice.selected{border-color:#ffabc4a6;background:#ffabc40d}
+.gamepanel{border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,#ffffff0a,#ffffff03);padding:clamp(20px,5vw,30px);box-shadow:0 24px 80px #0002}
+.gameprompt{font-family:'DM Sans',sans-serif;font-size:1.2rem;font-weight:600;letter-spacing:-.035em}
+.gamechoices button{border:1px solid var(--line);border-radius:14px;background:#ffffff06;min-height:54px}
+.gamechoices button:hover,.gamechoices button:active{border-color:#ffabc4;background:#ffabc410}
+.gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:32px auto}
+.photo{padding:0 0 13px;background:#171622;border:1px solid var(--line);border-radius:17px;overflow:hidden;color:#fff;box-shadow:0 12px 35px #0003;transform:none}
+.photo:nth-child(n){--rot:0deg}
+.photo:hover{transform:translateY(-4px) scale(1.01)}
+.photo img{height:clamp(140px,22vw,230px);object-fit:cover;filter:saturate(.92)}
+.photo figcaption{font-family:'DM Sans',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:-.01em;text-align:left;padding:12px 12px 0}
+.photo .caption-detail{text-align:left;padding:6px 12px 0;color:#c5baca}
+#photoModal{background:#05050ceF;backdrop-filter:blur(16px)}
+.modal-inner img{border:4px solid #fff;border-radius:18px}
+.letter{max-width:590px;padding:clamp(23px,5vw,38px);border:1px solid #ffffff19;border-radius:24px;background:linear-gradient(145deg,#ffffff0c,#ffffff04);box-shadow:0 30px 90px #0002}
+.letter:before{background:#11101c;color:#ffabc4;left:22px;font-weight:700}
+.letter p{color:#e0d9e5;line-height:1.9;font-size:.95rem}
+.letter .sign{font-family:'Cormorant Garamond',serif;font-size:1.65rem;color:#ffabc4}
+#starGame{gap:13px}
+.hiddenstar{width:58px;height:58px;border:1px solid #ffffff20;background:#ffffff07;border-radius:18px;color:#f5d8a6}
+.hiddenstar.found{background:#ffabc41a;border-color:#ffabc4;box-shadow:0 0 24px #ffabc42c}
+.bar{height:4px;background:#ffffff12;border-radius:99px}
+.bar span{background:linear-gradient(90deg,#ff8eae,#d7b7ff)}
+.gift{transform:scale(1.05);margin:36px auto 25px}
+.gift-box{background:linear-gradient(130deg,#ff8eb1,#b94b80);border-radius:9px 9px 14px 14px}
+.gift-lid{background:linear-gradient(130deg,#ffc5d6,#ff8eb1);border-radius:8px}
+.gift-ribbon{background:#f8dba5}
+#giftText{font-family:'DM Sans',sans-serif;font-size:clamp(1.3rem,4vw,2rem);font-weight:600;letter-spacing:-.04em;line-height:1.35}
+#giftText span{display:inline-block;margin-top:12px;font-weight:400;letter-spacing:0;line-height:1.7}
+.ticket-card{border:1px solid #e6dce8;border-radius:22px;overflow:hidden}
+.ticket-qr{border-radius:16px;box-shadow:0 12px 45px #0003}
+.balloon{border-radius:48% 48% 45% 45%;width:66px;height:84px;box-shadow:inset -7px -7px 0 #00000012,0 12px 24px #0003}
+.present-box .base{border-radius:8px 8px 12px 12px}
+.present-box .lid{border-radius:7px}
+footer{border-top:1px solid #ffffff0d;color:#797488;padding-top:28px}
+@media(max-width:560px){
+ .screen{padding:76px 18px 48px}
+ .hero-mosaic{height:205px;margin-top:22px}
+ .hero-photo{border-width:3px;border-radius:15px}
+ .hero-photo-main{width:42%;left:29%}
+ .hero-photo-side{width:31%;left:4%}
+ .hero-photo-bottom{width:30%;right:4%}
+ .mosaic-sticker{right:8%;font-size:.62rem}
+ .gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .photo img{height:185px}
+ .photo figcaption{font-size:.72rem;padding:10px 10px 0}
+ .chapter{padding:82px 17px;min-height:70svh}
+ .letter{border-radius:20px}
+ .gamechoices{grid-template-columns:1fr 1fr}
+ .choice{border-radius:17px}
+}
+
+
+/* Chaptered, premium interactive experience */
+section.screen,section.chapter{display:none;min-height:100svh;align-items:center;justify-content:center}
+section.screen.active,section.chapter.active{display:flex;animation:sceneIn .55s cubic-bezier(.2,.8,.2,1) both}
+@keyframes sceneIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+section.screen>.wrap,section.chapter>.wrap{width:min(940px,100%);margin:auto;padding:24px 0 30px}
+.album-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:34px 0}
+.album-card{padding:0;text-align:left;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:linear-gradient(145deg,#ffffff0c,#ffffff03);color:var(--cream);transition:transform .25s,border-color .25s;cursor:pointer}
+.album-card:hover{transform:translateY(-5px);border-color:#ffabc4a6}
+.album-stack{height:220px;position:relative;overflow:hidden;background:#171622}
+.album-stack img{position:absolute;width:43%;height:78%;object-fit:cover;border:3px solid #171622;border-radius:13px;box-shadow:0 12px 32px #0006}
+.album-stack img:nth-child(1){left:9%;top:14%;transform:rotate(-9deg)}.album-stack img:nth-child(2){left:31%;top:6%;z-index:2;transform:rotate(2deg)}.album-stack img:nth-child(3){right:7%;top:16%;transform:rotate(9deg)}
+.album-label{padding:20px;display:grid;gap:8px}.album-label span,.album-head .eyebrow{font-size:.65rem;letter-spacing:.17em;color:#ffabc4;font-weight:700}.album-label strong{font-size:1.7rem;letter-spacing:-.05em}.album-label small{font-size:.82rem;line-height:1.5;color:#c4c1d0}.album-label b{font-size:.8rem;margin-top:8px;color:#ffabc4}
+.album-head{max-width:680px;margin:0 auto 24px;text-align:left}.back-link{border:1px solid var(--line);background:#ffffff07;color:#f6eaf1;border-radius:99px;padding:9px 13px;margin-bottom:25px;font-size:.75rem}
+.album-screen .gallery{max-width:900px;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.album-photo{cursor:pointer;overflow:hidden;text-align:left;padding:0 0 13px;border:1px solid var(--line);border-radius:18px;background:#171622}
+.photo-image-wrap{position:relative;overflow:hidden}.album-photo img{width:100%;height:clamp(150px,20vw,230px);object-fit:cover;display:block;transition:transform .4s}.album-photo:hover img{transform:scale(1.04)}
+.photo-index{position:absolute;left:10px;top:10px;background:#080810a8;border:1px solid #ffffff35;backdrop-filter:blur(10px);padding:5px 7px;border-radius:7px;font-size:.6rem;letter-spacing:.08em}.photo-open{position:absolute;right:10px;top:10px;background:#080810a8;border:1px solid #ffffff35;border-radius:50%;width:26px;height:26px;display:grid;place-items:center}
+.album-photo figcaption{padding:12px 12px 0;font-size:.78rem;font-weight:600}.album-photo .caption-detail{padding:6px 12px 0;font-size:.7rem;line-height:1.5;color:#bcb6c8}
+.album-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:25px;color:#bcb6c8;font-size:.76rem}
+.match-stats{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:26px auto 18px}.match-stats span{display:flex;gap:7px;align-items:center;padding:10px 13px;border:1px solid var(--line);border-radius:12px;font-size:.62rem;letter-spacing:.08em;color:#c4c1d0}.match-stats b{color:#ffabc4}
+.match-board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;max-width:560px;margin:20px auto}
+.match-card{position:relative;aspect-ratio:.78;border:1px solid #ffffff1b;border-radius:16px;background:linear-gradient(145deg,#29243a,#14131e);overflow:hidden;display:grid;place-items:center;cursor:pointer;transition:transform .2s,border-color .2s;padding:0}
+.match-card:hover{transform:translateY(-2px);border-color:#ffabc4}.match-card .card-back{font-size:2rem;color:#ffabc4;transition:opacity .15s}.match-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(.92);transition:opacity .18s,transform .2s}
+.match-card.flipped img,.match-card.matched img{opacity:1;transform:scale(1)}.match-card.flipped .card-back,.match-card.matched .card-back{opacity:0}.match-card.matched{border:2px solid #ffabc4;box-shadow:0 0 22px #ffabc426}
+.mission-progress{max-width:560px;margin:25px auto 12px;text-align:left;color:#ffabc4;font-size:.66rem;letter-spacing:.13em}.mission-progress .bar{margin-top:10px}
+.detective-card{max-width:660px;margin:auto;border:1px solid var(--line);border-radius:25px;padding:clamp(20px,4vw,32px);background:linear-gradient(145deg,#ffffff0a,#ffffff03);box-shadow:0 25px 80px #0003}
+.detective-tag{color:#ffabc4;font-size:.65rem;font-weight:700;letter-spacing:.16em}.detective-card h3{font-size:clamp(1.25rem,3.6vw,1.8rem);letter-spacing:-.04em;line-height:1.2;margin:12px 0 20px}
+.detective-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.mission-option{position:relative;overflow:hidden;padding:0;border:1px solid var(--line);border-radius:16px;background:#ffffff05;color:#f6eaf1;text-align:left;transition:transform .2s,border-color .2s}
+.mission-option img{width:100%;height:clamp(140px,21vw,210px);object-fit:cover;display:block}.mission-option span{display:block;padding:10px;font-size:.7rem}.mission-option:hover{transform:translateY(-3px);border-color:#ffabc4}.mission-option.correct{border:2px solid #ffabc4;box-shadow:0 0 24px #ffabc424}.mission-option.wrong{border:2px solid #ff657f;transform:translateX(3px)}
+button:disabled{opacity:.38;cursor:not-allowed}
+@media(max-width:620px){section.screen>.wrap,section.chapter>.wrap{padding:16px 0 18px}.album-choices{grid-template-columns:1fr;gap:14px;margin:25px 0}.album-stack{height:175px}.album-label{padding:16px}.album-screen .gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.album-photo img{height:190px}.album-bottom{align-items:flex-start;flex-direction:column}.match-board{gap:8px}.match-card{border-radius:12px}.detective-options{gap:8px}.mission-option img{height:135px}.mission-option span{padding:8px;font-size:.62rem}}
+
+/* ANJUMA — CHUMBBAK / warm editorial redesign */
+:root{
+ --ink:#30261f;--plum:#4a3a30;--rose:#bd7968;--rose2:#a95f50;
+ --cream:#fbf3e7;--gold:#c3a46c;--muted:#77695c;--line:rgba(87,67,49,.18);
+ --sage:#75816a;--paper:#f8efdf;--terracotta:#bd7968;--olive:#68765b;
+}
+html{background:#f8efdf}
+body{background:#f8efdf;color:#34291f;font-family:'DM Sans',sans-serif;letter-spacing:0}
+body:before{z-index:-2;background:radial-gradient(ellipse at 8% 4%,rgba(222,178,139,.35),transparent 35%),radial-gradient(ellipse at 92% 28%,rgba(151,164,132,.24),transparent 38%),radial-gradient(ellipse at 50% 100%,rgba(199,139,117,.15),transparent 42%),linear-gradient(145deg,#fbf4e8 0%,#f2e5d2 52%,#f9f1e5 100%)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.13;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E")}
+#sky .star{background:#b78b63;opacity:.18}
+.screen, .chapter{color:#34291f}
+.hero-kicker{color:#6b5b4c;background:#fffaf1a8;border-color:#cbb79a;backdrop-filter:blur(8px)}
+.live-dot{background:#75816a;box-shadow:0 0 12px #75816a77}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;font-weight:500;letter-spacing:-.035em}
+h1{font-size:clamp(4rem,13vw,8rem);line-height:.82;color:#38271f;letter-spacing:-.055em}
+h1 em,h2 em{color:#b56f5e;font-style:italic}
+.hero-serif{color:#b56f5e;font-family:'Cormorant Garamond',serif;font-style:italic}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,8vw,5.7rem);font-weight:500;line-height:.88;letter-spacing:-.045em;color:#3c2c22}
+p{color:#756658;font-size:.97rem;line-height:1.85}
+.lead{color:#756658}
+.eyebrow,.progress-label{color:#75816a}
+.tiny{color:#8e7c6b}
+.primary{background:#3e4c3d;color:#fff7e9;border:1px solid #3e4c3d;border-radius:999px;box-shadow:0 9px 24px #46543b20;font-weight:600}
+.primary:hover{background:#53654d;box-shadow:0 12px 28px #46543b2b}
+.secondary,.back-link{background:#fffaf0a8;color:#59483a;border:1px solid #c9b69d;border-radius:999px}
+.sound{color:#59483a;background:#fffaf0dc;border:1px solid #c9b69d;box-shadow:0 8px 24px #634b3010}
+.topline{background:linear-gradient(90deg,#b97967,#d8b77f,#7c8b70)}
+.hero-photo{border:5px solid #fff7e9;background:#fff7e9;box-shadow:0 18px 44px #62472b2b;border-radius:5px}
+.hero-photo-main{transform:rotate(-2deg)}.hero-photo-side{transform:rotate(-7deg)}.hero-photo-bottom{transform:rotate(5deg)}
+.mosaic-sticker{background:#75816a;color:#fff8ec;border-radius:3px;box-shadow:0 8px 24px #5b503328}
+.hero-meta span{color:#6c5a49;border-color:#cbb89d;background:#fffaf05c}
+.album-card{background:#fff9ef;border-color:#d7c4a9;color:#3d3025;border-radius:7px;box-shadow:0 15px 40px #6d4b2a12}
+.album-card:hover{border-color:#9b9e7a;box-shadow:0 20px 42px #6d4b2a1b}
+.album-stack{background:#e4d5bd}
+.album-stack img{border:4px solid #fff7e9;box-shadow:0 10px 24px #60452b26;border-radius:2px}
+.album-label{background:#fff9ef}.album-label span,.album-head .eyebrow,.album-label b{color:#9d6858}.album-label strong{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:500;color:#3d3025;letter-spacing:-.025em}.album-label small{color:#796858}
+.album-head{color:#3d3025}.album-head .lead{color:#796858}
+.gallery{gap:16px}
+.album-photo,.photo{background:#fffaf0;color:#49382a;border:1px solid #e3d4bf;border-radius:3px;box-shadow:0 12px 28px #63482b19}
+.photo{padding:7px 7px 15px}
+.photo img{filter:saturate(.88) sepia(.04)}
+.photo figcaption,.album-photo figcaption{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:#4a382b}
+.photo .caption-detail,.album-photo .caption-detail{color:#84715e}
+.photo-index,.photo-open{background:#f8eddbd9;color:#4e3b2c;border:1px solid #fff8e9;backdrop-filter:blur(8px)}
+.album-bottom{color:#7d6c5a}
+.letter{background:#fff8eb;border:1px solid #e1cba9;border-radius:3px;box-shadow:0 18px 50px #6b4c2b15}
+.letter:before{background:#fff8eb;color:#9d6858;font-family:'DM Sans',sans-serif}
+.letter p{color:#655344}.letter .sign{color:#a96858}
+.gamepanel,.detective-card{background:#fff9ef;border:1px solid #dfcdb3;border-radius:7px;box-shadow:0 18px 45px #6d4b2a12}
+.gameprompt,.detective-card h3{font-family:'Cormorant Garamond',serif;color:#463327;font-size:1.8rem;letter-spacing:-.02em}
+.gamechoices button{background:#f8efdf;color:#59483a;border:1px solid #d9c6ab;border-radius:5px}
+.gamechoices button:hover,.gamechoices button:active{border-color:#75816a;background:#e9ecdf}
+.feedback{color:#75816a}
+.match-stats span{color:#7c6a58;border-color:#d7c4aa}.match-stats b{color:#a96858}
+.match-card{background:linear-gradient(145deg,#e5d7bd,#f8efdf);border:1px solid #d2bea0;border-radius:5px}
+.match-card .card-back{color:#75816a}.match-card.matched{border-color:#75816a;box-shadow:0 0 0 2px #75816a25}
+.mission-progress{color:#9c6c57}.mission-option{background:#fffaf0;color:#4d3a2b;border-color:#dfcdb4;border-radius:4px}.mission-option.correct{border-color:#75816a;box-shadow:0 0 0 2px #75816a20}.mission-option.wrong{border-color:#b96f60}
+.bar{background:#dfd1bb}.bar span{background:#75816a}
+.balloon:nth-child(4n+1){background:linear-gradient(135deg,#e5b3a2,#b87568)}.balloon:nth-child(4n+2){background:linear-gradient(135deg,#e6d2a8,#b89b66)}.balloon:nth-child(4n+3){background:linear-gradient(135deg,#b9c5a8,#75866b)}.balloon:nth-child(4n){background:linear-gradient(135deg,#d6b7a1,#ad8067)}
+.balloon:after{background:#8c7560a8}
+.present-box .base{background:linear-gradient(120deg,#a96858,#854f43)}.present-box .lid{background:linear-gradient(120deg,#d7a08b,#b97967)}.present-box .ribbon{background:#d9bd83}
+#firstGiftMessage,#giftText{color:#a96858}
+.gift-box{background:linear-gradient(120deg,#a96858,#854f43)}.gift-lid{background:linear-gradient(120deg,#d7a08b,#b97967)}.gift-ribbon,.gift-bow{border-color:#d9bd83;background:#d9bd83}
+.ticket-card{background:#fffdf8;border:1px solid #e4d4bd;border-radius:5px;box-shadow:0 18px 48px #60452b20;color:#3b2b22}
+.ticket-details{color:#665548}.ticket-card img.ticket-shot{border-radius:3px}
+#photoModal{background:#2f261feF}.modal-inner img{border:8px solid #fff8eb}.modal-inner p{color:#f8eddb}
+footer{color:#8a7865}
+#confetti .confetti{opacity:.9}
+@media(max-width:620px){.hero-photo{border-width:3px}.album-stack img{border-width:3px}.gallery{gap:10px}.album-photo{border-radius:3px}.hero-kicker{font-size:.56rem;letter-spacing:.1em}}
+
+
+/* COMPLETE VISUAL RESET — warm botanical scrapbook / Chumbak-inspired palette */
+:root{
+ --ink:#35291f;--plum:#574637;--rose:#b76b55;--rose2:#a45c47;
+ --cream:#fff7e9;--gold:#c49b61;--muted:#776657;--paper:#f5e8d3;
+ --sage:#627b66;--sage-dark:#405b4a;--line:#d8c5aa;--blush:#ead1be;
+}
+html{scroll-behavior:smooth;background:#f3e5cf}
+body{margin:0;background:#f3e5cf;color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;background:
+ radial-gradient(ellipse at 10% 12%,#f9efdf 0,transparent 36%),
+ radial-gradient(ellipse at 90% 80%,#d9d5bb 0,transparent 36%),
+ linear-gradient(135deg,#f3e5cf,#f8eddd 52%,#e8d8bf)}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;opacity:.2;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.78' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.15'/%3E%3C/svg%3E")}
+#sky{position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden}
+.star{width:3px;height:3px;background:#b18d58;opacity:.25!important;animation:twinkle 4s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.12;transform:scale(.7)}50%{opacity:.45;transform:scale(1.2)}}
+button{font:inherit;cursor:pointer}
+.screen,.chapter{min-height:100svh;padding:92px 24px 42px;display:none;align-items:center;justify-content:center;position:relative;isolation:isolate}
+.screen.active,.chapter.active{display:flex;animation:paperIn .55s ease both}
+@keyframes paperIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.wrap{width:min(1040px,100%);margin:auto;text-align:center;position:relative}
+.wrap:before{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 0% 10%,#fffaf0aa,transparent 45%),radial-gradient(ellipse at 100% 100%,#d7d7b833,transparent 42%)}
+.site-nav{position:fixed;z-index:50;top:0;left:0;right:0;height:58px;padding:0 clamp(16px,4vw,48px);display:flex;align-items:center;justify-content:space-between;background:#f5ead9e8;border-bottom:1px solid #cdb99d88;backdrop-filter:blur(18px);color:#382b20}
+.brand-mark{border:0;background:transparent;color:#3c3024;font-family:'Cormorant Garamond',serif;font-size:1.2rem;letter-spacing:.04em}.brand-mark span{color:#ad654e}
+.nav-links{display:flex;align-items:center;gap:clamp(15px,3vw,36px)}.nav-links button,.nav-menu{border:0;background:transparent;color:#594638;font-family:'Cormorant Garamond',serif;font-size:.9rem;padding:8px 0}.nav-links button:hover{color:#a45c47}.nav-menu{display:none;font-size:1.2rem}
+.eyebrow,.hero-kicker{text-transform:uppercase;letter-spacing:.18em;font-size:.65rem;color:#7c7057}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;color:#39291e}
+h1{font-size:clamp(3.8rem,10vw,7.6rem);line-height:.84;margin:24px 0;letter-spacing:-.045em}
+h1 em,h2 em,.hero-serif{font-weight:400;color:#a9614c;font-style:italic}
+h2{font-size:clamp(2.7rem,7vw,5.2rem);line-height:.94;margin:18px 0;letter-spacing:-.035em}
+h3{font-size:1.7rem}
+p{color:#6e5b49;line-height:1.8;font-size:.96rem}
+.lead{max-width:580px;margin:0 auto 28px;color:#766553}
+.tiny{font-size:.75rem;color:#887762}
+.primary{border:0;border-radius:99px;padding:14px 24px;background:#405d4c;color:#fff8e9;font-weight:500;box-shadow:0 8px 20px #405d4c25;transition:transform .25s,background .25s}
+.primary:hover{transform:translateY(-2px);background:#314b3c;box-shadow:0 12px 25px #405d4c30}
+.secondary{border:1px solid #bca88c;border-radius:99px;background:#fff8edaa;color:#514232;padding:12px 20px}
+.heart{font-size:3rem;color:#ad654e;filter:none;animation:pulse 2s infinite}
+.topline{position:fixed;top:57px;left:0;height:3px;background:linear-gradient(90deg,#b96d54,#d0b17b,#657e68);width:0;z-index:30;transition:width .4s}
+.sound{position:fixed;right:18px;top:72px;z-index:20;border:1px solid #cdb99d;border-radius:99px;padding:9px 12px;background:#f8eddded;color:#594638;font-size:.72rem;backdrop-filter:blur(10px)}
+.chapter{padding:92px 24px 42px;min-height:100svh}
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px auto;max-width:760px}
+.choice{min-height:145px;border:1px solid #d5c1a5;border-radius:18px;background:#fff8edb8;color:#453629;padding:16px 10px;transition:.25s;box-shadow:0 8px 24px #7b604015}
+.choice:hover,.choice.selected{border-color:#9b7657;transform:translateY(-3px);background:#e9dfca}
+.choice .ico{font-size:1.9rem;display:block;margin-bottom:10px}.choice b{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:500}.choice .answer{display:none;font-size:.76rem;color:#6e5b49;line-height:1.55;margin-top:10px}.choice.selected .answer{display:block}
+.progress-label{font-size:.7rem;letter-spacing:.13em;color:#7c7057;text-transform:uppercase}.bar{height:4px;background:#d9c8ae;border-radius:9px;max-width:260px;margin:13px auto 25px;overflow:hidden}.bar span{display:block;width:0;height:100%;background:#627b66;transition:width .5s}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px auto;max-width:940px}
+.photo{padding:8px 8px 16px;background:#fff9ef;border:1px solid #e4d3ba;border-radius:5px;color:#3c3024;box-shadow:0 10px 25px #70583b20;transform:rotate(var(--rot));transition:transform .35s;cursor:pointer;position:relative}
+.photo:nth-child(3n){--rot:1.2deg}.photo:nth-child(3n+1){--rot:-1.5deg}.photo:nth-child(3n+2){--rot:.5deg}.photo:hover{transform:rotate(0) translateY(-4px) scale(1.02);z-index:2}
+.photo img{width:100%;height:190px;object-fit:cover;display:block;background:#e3d4bd}.photo figcaption{font-family:'Cormorant Garamond',serif;font-size:1.12rem;padding-top:10px;color:#3e3024}.photo .caption-detail{display:none;font-family:'DM Sans',sans-serif;font-size:.72rem;color:#776553;line-height:1.4;padding:5px 4px 0}.photo.reveal .caption-detail{display:block}
+#photoModal{position:fixed;inset:0;background:#30271feF;display:none;z-index:60;align-items:center;justify-content:center;padding:20px}#photoModal.show{display:flex}.modal-inner{max-width:520px;width:100%;text-align:center}.modal-inner img{max-height:60svh;max-width:100%;border:8px solid #fff8ed;object-fit:contain}
+.album-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:34px auto;max-width:850px}
+.album-card{padding:0;text-align:left;border:1px solid #d5c1a5;border-radius:18px;overflow:hidden;background:#fff8ed;color:#3c3024;box-shadow:0 15px 36px #755c3d18;transition:transform .25s,border-color .25s;cursor:pointer}
+.album-card:hover{transform:translateY(-5px);border-color:#9b7657}
+.album-stack{height:240px;position:relative;overflow:hidden;background:#d9d0b9}
+.album-stack img{position:absolute;width:43%;height:78%;object-fit:cover;border:5px solid #fff8ed;border-radius:3px;box-shadow:0 12px 24px #3c302430}
+.album-stack img:nth-child(1){left:9%;top:14%;transform:rotate(-9deg)}.album-stack img:nth-child(2){left:31%;top:6%;z-index:2;transform:rotate(2deg)}.album-stack img:nth-child(3){right:7%;top:16%;transform:rotate(9deg)}
+.album-label{padding:19px 22px 22px;display:grid;gap:8px}.album-label span,.album-head .eyebrow{font-size:.65rem;letter-spacing:.17em;color:#8b6c48;font-weight:700}.album-label strong{font-size:1.8rem;letter-spacing:-.04em;font-family:'Cormorant Garamond',serif;font-weight:500}.album-label small{font-size:.82rem;line-height:1.5;color:#776553}.album-label b{font-size:.8rem;margin-top:8px;color:#526e58}
+.album-head{max-width:680px;margin:0 auto 24px;text-align:left}.back-link{border:1px solid #d1bda0;background:#fff8ed;color:#5d4b38;border-radius:99px;padding:9px 13px;margin-bottom:25px;font-size:.75rem}
+.album-screen .gallery{max-width:1000px;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.album-photo{cursor:pointer;overflow:hidden;text-align:left;padding:0 0 13px;border:1px solid #e1d0b6;border-radius:9px;background:#fff9ef}
+.photo-image-wrap{position:relative;overflow:hidden}.album-photo img{width:100%;height:clamp(150px,20vw,230px);object-fit:cover;display:block;transition:transform .4s}.album-photo:hover img{transform:scale(1.04)}
+.photo-index{position:absolute;left:10px;top:10px;background:#f8eddddf;border:1px solid #fff9ed;padding:5px 7px;border-radius:7px;font-size:.6rem;letter-spacing:.08em;color:#4b3b2b}.photo-open{position:absolute;right:10px;top:10px;background:#f8eddddf;border:1px solid #fff9ed;border-radius:50%;width:26px;height:26px;display:grid;place-items:center;color:#4b3b2b}
+.album-photo figcaption{padding:12px 12px 0;font-size:.82rem;font-weight:600}.album-photo .caption-detail{padding:6px 12px 0;font-size:.7rem;line-height:1.5;color:#84715b}
+.album-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:25px;color:#7a6855;font-size:.76rem}
+.match-stats{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:26px auto 18px}.match-stats span{display:flex;gap:7px;align-items:center;padding:10px 13px;border:1px solid #d5c1a5;border-radius:12px;font-size:.62rem;letter-spacing:.08em;color:#786550;background:#fff8ed}.match-stats b{color:#526e58}
+.match-board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;max-width:560px;margin:20px auto}
+.match-card{position:relative;aspect-ratio:.78;border:1px solid #d7c3a8;border-radius:12px;background:linear-gradient(145deg,#fff9ef,#e7d8bf);overflow:hidden;display:grid;place-items:center;cursor:pointer;transition:transform .2s,border-color .2s;padding:0;box-shadow:0 5px 14px #6d57331b}
+.match-card:hover{transform:translateY(-2px);border-color:#8a9b7a}.match-card .card-back{font-size:2rem;color:#9b6b51;transition:opacity .15s}.match-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(.92);transition:opacity .18s,transform .2s}
+.match-card.flipped img,.match-card.matched img{opacity:1;transform:scale(1)}.match-card.flipped .card-back,.match-card.matched .card-back{opacity:0}.match-card.matched{border:2px solid #657f68;box-shadow:0 0 18px #627b6622}
+.mission-progress{max-width:560px;margin:25px auto 12px;text-align:left;color:#7d6b53;font-size:.66rem;letter-spacing:.13em}.mission-progress .bar{margin-top:10px}
+.detective-card{max-width:720px;margin:auto;border:1px solid #d6c2a6;border-radius:20px;padding:clamp(20px,4vw,32px);background:#fff8edcc;box-shadow:0 20px 50px #70583b17}
+.detective-tag{color:#8b6c48;font-size:.65rem;font-weight:700;letter-spacing:.16em}.detective-card h3{font-size:clamp(1.25rem,3.6vw,1.8rem);letter-spacing:-.04em;line-height:1.2;margin:12px 0 20px}
+.detective-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.mission-option{position:relative;overflow:hidden;padding:0;border:1px solid #d8c5aa;border-radius:12px;background:#fff8ed;color:#453629;text-align:left;transition:transform .2s,border-color .2s}
+.mission-option img{width:100%;height:clamp(140px,21vw,210px);object-fit:cover;display:block}.mission-option span{display:block;padding:10px;font-size:.7rem}.mission-option:hover{transform:translateY(-3px);border-color:#8a9b7a}.mission-option.correct{border:2px solid #627b66;box-shadow:0 0 20px #627b6624}.mission-option.wrong{border:2px solid #b85e4a;transform:translateX(3px)}
+/* Hero collage: editorial photographs and handwritten details */
+#start .wrap{max-width:1050px}
+.hero-kicker{display:inline-flex;align-items:center;gap:9px;border:1px solid #d8c4a6;background:#fff8edaa;padding:9px 14px;border-radius:99px}
+.live-dot{width:6px;height:6px;border-radius:50%;background:#71866a;box-shadow:0 0 0 4px #71866a20}
+.hero-mosaic{height:clamp(220px,34vw,360px);max-width:560px;margin:0 auto 24px;position:relative}
+.hero-photo{position:absolute;padding:7px;background:#fffaf0;border:1px solid #ddc9ad;box-shadow:0 14px 35px #6b503321}
+.hero-photo img{width:100%;height:100%;display:block;object-fit:cover}
+.hero-photo-main{width:43%;height:92%;left:28%;top:2%;transform:rotate(2deg);z-index:2}
+.hero-photo-side{width:31%;height:70%;left:4%;top:20%;transform:rotate(-8deg)}
+.hero-photo-bottom{width:30%;height:66%;right:4%;top:28%;transform:rotate(7deg)}
+.mosaic-sticker{position:absolute;right:4%;bottom:1%;z-index:4;background:#f1dfc2;color:#8a604a;border:1px solid #d4b995;border-radius:50%;width:72px;height:72px;display:grid;place-items:center;font-family:'Cormorant Garamond',serif;font-size:.85rem;transform:rotate(9deg)}
+#start .lead{max-width:570px}
+.gamepanel,.letter,.detective-card,.first-present-card{border:1px solid #d7c3a8;background:#fff8edcc;border-radius:20px;box-shadow:0 18px 48px #6e543517}
+.gamepanel{padding:clamp(20px,4vw,34px);max-width:700px;margin:25px auto}
+.gameprompt{font-family:'Cormorant Garamond',serif;font-size:1.55rem;color:#433426;margin:18px auto}
+.gamechoices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:20px auto}
+.gamechoices button{border:1px solid #d6c2a6;border-radius:12px;background:#f6ead7;color:#594735;padding:13px}.gamechoices button:hover{background:#e9ddc8;border-color:#9b7657}
+.feedback{color:#6e5b49}
+.balloon-field{display:flex;align-items:center;justify-content:center;gap:clamp(12px,4vw,35px);flex-wrap:wrap;min-height:220px;max-width:760px;margin:22px auto}
+.balloon{width:clamp(64px,10vw,100px);height:clamp(80px,13vw,125px);border:0;border-radius:50% 50% 46% 46%;background:radial-gradient(circle at 32% 23%,#fff6d7,#d7b58a 48%,#ad7a59);color:#fff9ed;font-size:1.4rem;box-shadow:inset -9px -12px 18px #7d543c30,0 14px 22px #8262441c;position:relative;transition:transform .25s}
+.balloon:after{content:"";position:absolute;left:50%;bottom:-36px;width:1px;height:40px;background:#b79c7e}.balloon:nth-child(2n){background:radial-gradient(circle at 32% 23%,#f9e2d3,#d7a28d 52%,#b16c5a)}.balloon:nth-child(3n){background:radial-gradient(circle at 32% 23%,#e7ebd4,#98a783 52%,#6c8064)}.balloon.popped{transform:scale(.1) rotate(30deg);opacity:0;pointer-events:none}
+.present-box{width:130px;height:110px;margin:20px auto;position:relative;cursor:pointer;display:none}.present-box.show{display:block}.present-box .lid{position:absolute;top:0;left:-7px;width:144px;height:26px;background:#a95f4a;border:2px solid #f3dfc1;z-index:2;transition:transform .4s}.present-box .lid:after,.present-box:before{content:"";position:absolute;left:55px;top:0;width:20px;height:100%;background:#e4c17d}.present-box:before{left:53px;top:24px;width:24px;height:85px;background:#d9b36e;z-index:1}.present-box{background:#b96e57;height:84px;border:2px solid #f0ddbf}.present-box.open .lid{transform:translateY(-28px) rotate(-8deg)}
+#firstGiftMessage{display:none;max-width:460px;margin:10px auto;padding:20px;border:1px dashed #bca17d;background:#f5e8d3;border-radius:12px}#firstGiftMessage.show{display:block}
+.letter{max-width:760px;margin:28px auto;padding:clamp(24px,5vw,54px);text-align:left;background:#fff8e9;border-radius:4px;box-shadow:0 18px 45px #6d52321c;position:relative;border:1px solid #e3d1b4}
+.letter:before{content:"";position:absolute;inset:9px;border:1px solid #e5d2b4;pointer-events:none}
+.letter p{position:relative;color:#5e4c3a;font-family:'Cormorant Garamond',serif;font-size:1.13rem;line-height:1.75}
+.gift{width:150px;height:140px;margin:24px auto;position:relative;cursor:pointer;filter:drop-shadow(0 14px 20px #805b321b)}
+.gift-box{position:absolute;bottom:0;left:10px;width:130px;height:88px;background:#9b634e;border:2px solid #f4dfbd;border-radius:3px}
+.gift-lid{position:absolute;top:22px;left:0;width:150px;height:28px;background:#b47a5c;border:2px solid #f4dfbd;border-radius:3px;z-index:2;transition:transform .5s}
+.gift-ribbon{position:absolute;top:23px;left:64px;width:22px;height:117px;background:#d5b879;z-index:3}
+.gift-bow:before,.gift-bow:after{content:"";position:absolute;top:0;left:47px;width:32px;height:25px;border:5px solid #d5b879;border-radius:50% 50% 0 50%;transform:rotate(25deg);z-index:4}.gift-bow:after{left:76px;transform:rotate(65deg)}
+.gift.open .gift-lid{transform:translateY(-42px) rotate(-10deg)}
+#giftText{display:none;max-width:640px;margin:20px auto;padding:24px;background:#fff8ed;border:1px dashed #bda17c;border-radius:16px;color:#5e4c3a}#giftText.show{display:block}
+.ticket-card{max-width:690px;margin:20px auto;padding:18px;background:#fffaf0;border:1px solid #d9c4a4;border-radius:18px;box-shadow:0 18px 40px #4d38271c}.ticket-card img{width:100%;height:auto;display:block;border-radius:9px}
+.album-head h2{margin-top:10px}
+@media(max-width:620px){
+ .site-nav{height:54px}.nav-menu{display:block}.nav-links{display:none;position:absolute;top:53px;right:12px;left:12px;background:#fff8ed;border:1px solid #d8c5aa;border-radius:14px;padding:12px 18px;box-shadow:0 14px 35px #4c39201a;align-items:flex-start;flex-direction:column}.site-nav.nav-open .nav-links{display:flex}
+ .topline{top:53px}.screen,.chapter{padding:80px 16px 28px}.hero-mosaic{height:245px}.hero-photo-main{width:48%;left:26%}.hero-photo-side{width:34%;left:1%}.hero-photo-bottom{width:31%;right:0}.mosaic-sticker{width:58px;height:58px;font-size:.72rem}
+ .gallery{grid-template-columns:repeat(2,1fr);gap:10px}.photo img{height:160px}.album-choices{grid-template-columns:1fr;gap:15px;margin:24px auto}.album-stack{height:190px}.album-screen .gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.album-photo img{height:180px}
+ .album-bottom{align-items:flex-start;flex-direction:column}.match-board{gap:8px}.match-card{border-radius:10px}.detective-options{gap:8px}.mission-option img{height:135px}.mission-option span{padding:8px;font-size:.62rem}.card-grid{grid-template-columns:repeat(2,1fr)}
+ .gamechoices{grid-template-columns:1fr 1fr}.sound{top:65px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+
+/* One keepsake notebook for every memory */
+.notebook-cover{position:relative;max-width:580px;margin:30px auto 26px;padding:17px 17px 17px 31px;background:#637b64;border-radius:5px 18px 18px 5px;box-shadow:0 24px 50px #55402c2c;transform:rotate(-1deg);cursor:pointer;text-align:left;transition:transform .25s}
+.notebook-cover:hover{transform:rotate(0deg) translateY(-4px)}
+.notebook-cover:before{content:"";position:absolute;left:18px;top:0;bottom:0;width:2px;background:#e3d5b6a8}
+.notebook-cover-inner{padding:27px 26px 24px 33px;border:1px solid #e7d7b7;border-radius:3px 12px 12px 3px;background:linear-gradient(135deg,#657f67,#506c55);color:#fff4df;min-height:260px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:12px}
+.notebook-cover-inner>span{font-size:.62rem;letter-spacing:.2em;color:#e8d8b7}
+.notebook-cover-inner strong{font:500 clamp(2rem,5vw,3.3rem)/.98 'Cormorant Garamond',Georgia,serif;letter-spacing:-.03em;color:#fff4df}
+.notebook-cover-inner strong em{color:#f0d3a6;font-weight:400}
+.notebook-cover-photos{display:flex;gap:8px;align-self:flex-end;margin-top:-12px;margin-bottom:2px;transform:rotate(3deg)}
+.notebook-cover-photos img{width:82px;height:92px;object-fit:cover;border:5px solid #fff8e9;box-shadow:0 5px 15px #233a2860}
+.notebook-cover-photos img:nth-child(2){transform:translateY(-12px) rotate(-7deg)}.notebook-cover-photos img:nth-child(3){transform:rotate(5deg)}
+.notebook-cover-inner small{font-size:.72rem;color:#eee1c6;letter-spacing:.05em}
+.notebook-cover-inner b{font-size:.68rem;letter-spacing:.13em;color:#f2d7a8;margin-top:6px}
+.notebook-rings{position:absolute;left:4px;top:25px;bottom:25px;display:flex;flex-direction:column;justify-content:space-around;z-index:3}
+.notebook-rings i{display:block;width:25px;height:9px;border:3px solid #d8c5a5;border-radius:99px;background:#8a9c7b;box-shadow:0 2px 4px #293a2755}
+.notebook-book{max-width:1000px;margin:24px auto 0;padding:13px 13px 13px 25px;background:#d6c3a5;border-radius:6px 16px 16px 6px;box-shadow:0 22px 48px #5d45281e;position:relative}
+.notebook-spine{position:absolute;left:13px;top:0;bottom:0;width:12px;background:repeating-linear-gradient(to bottom,#c5af8c 0 12px,#a58c68 12px 14px);border-right:1px solid #b6a07e}
+.notebook-page{background:#fff8e9;min-height:250px;padding:clamp(16px,3vw,32px);position:relative;border:1px solid #e2d1b4;background-image:radial-gradient(ellipse at 0 0,#fffdf5,transparent 45%),repeating-linear-gradient(to bottom,transparent 0 31px,#b6c7b122 32px)}
+.notebook-page-label{display:flex;justify-content:space-between;border-bottom:1px solid #d9c7a9;padding-bottom:12px;margin-bottom:20px;font-size:.62rem;letter-spacing:.18em;color:#8b765c}
+.notebook-page-label span{color:#b36a52;font-size:1rem}
+.notebook-gallery{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:18px 0 28px}
+.notebook-photo{transform:rotate(var(--rot));padding:7px 7px 12px;border-radius:2px;background:#fffdf6;box-shadow:0 7px 18px #70583b20;position:relative}
+.notebook-photo:nth-child(4n){--rot:1.6deg}.notebook-photo:nth-child(4n+1){--rot:-1.8deg}.notebook-photo:nth-child(4n+2){--rot:.7deg}.notebook-photo:nth-child(4n+3){--rot:-.4deg}
+.notebook-photo img{height:clamp(140px,17vw,205px);object-fit:cover}
+.notebook-photo figcaption{font:500 1.05rem 'Cormorant Garamond',Georgia,serif;color:#574333;padding:9px 5px 0}
+.notebook-photo .caption-detail{display:block;font:italic .72rem/1.45 'Cormorant Garamond',Georgia,serif;color:#89755d;padding:5px 5px 0}
+.notebook-doodle{position:absolute;right:11px;bottom:8px;color:#b56b53;font-size:.8rem}
+.notebook-footer{display:flex;justify-content:space-between;border-top:1px solid #d9c7a9;padding-top:12px;color:#8b765c;font:italic .85rem 'Cormorant Garamond',serif}
+@media(max-width:620px){.notebook-cover-inner{padding:22px 15px 20px 25px;min-height:230px}.notebook-cover-photos img{width:64px;height:76px}.notebook-book{padding:8px 8px 8px 18px}.notebook-spine{left:8px;width:8px}.notebook-page{padding:13px}.notebook-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.notebook-photo img{height:180px}.notebook-photo figcaption{font-size:1rem}.notebook-photo .caption-detail{font-size:.7rem}}
+
+
+.wordhunt-shell{max-width:620px;margin:28px auto 22px;padding:18px;border:1px solid #d7c3a8;border-radius:18px;background:#fff8edcc;box-shadow:0 18px 40px #6d52321a}
+.wordhunt-top{display:flex;justify-content:space-between;gap:12px;padding:0 3px 14px;border-bottom:1px solid #dfceb3;color:#8b765c;font-size:.62rem;letter-spacing:.14em}
+.word-grid{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));gap:6px;margin:18px auto;max-width:440px}
+.word-cell{aspect-ratio:1;border:1px solid #ddc9aa;border-radius:8px;background:#f8eddc;color:#49392a;font:600 clamp(.8rem,2.5vw,1.1rem) 'DM Sans',sans-serif;transition:background .18s,transform .18s}
+.word-cell:hover{transform:scale(1.04);background:#eadcc5}.word-cell.selected{background:#d7b783;border-color:#98764f}.word-cell.found{background:#657f68;color:#fff8e9;border-color:#657f68}
+.wordhunt-bottom{border-top:1px solid #dfceb3;padding-top:14px}.word-clues{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;text-align:left}
+.word-clue{display:flex;align-items:center;gap:8px;padding:9px 10px;border:1px solid #e2d0b4;border-radius:10px;background:#fffaf0}.word-clue>span{font-size:1rem;color:#b46d54}.word-clue b{display:block;font-size:.72rem;letter-spacing:.1em;color:#51412f}.word-clue small{display:block;margin-top:3px;font-size:.68rem;color:#88745d}.word-clue.done{background:#e1e8d9;border-color:#9db29a}.word-clue.done>span{color:#526e58}
+.notebook-cover{cursor:pointer}
+@media(max-width:620px){.wordhunt-shell{padding:12px}.word-grid{gap:4px}.word-cell{border-radius:6px}.word-clues{grid-template-columns:1fr 1fr}.wordhunt-top{font-size:.55rem}}
+
+
+.jigsaw-shell{max-width:560px;margin:26px auto 22px;padding:17px;border:1px solid #d7c3a8;border-radius:18px;background:#fff8edcc;box-shadow:0 18px 40px #6d52321a}
+.jigsaw-top{display:flex;justify-content:space-between;gap:10px;padding:0 3px 14px;border-bottom:1px solid #dfceb3;color:#8b765c;font-size:.62rem;letter-spacing:.14em}
+.jigsaw-board{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;max-width:430px;margin:18px auto}
+.jigsaw-piece{aspect-ratio:1;border:2px solid #fff8e9;border-radius:5px;background-repeat:no-repeat;background-color:#dfcbb0;box-shadow:0 3px 8px #654a2a18;transition:border-color .18s,transform .18s}
+.jigsaw-piece:hover{transform:scale(.98);border-color:#a16a50}.jigsaw-piece.selected{border:3px solid #b46d54;transform:scale(.95);box-shadow:0 0 0 3px #b46d5425}.jigsaw-piece.in-place{border-color:#b9c7ac}
+@media(max-width:620px){.jigsaw-shell{padding:12px}.jigsaw-board{gap:3px}.jigsaw-piece{border-width:1px}}
+
+
+/* Anjuma's keepsake identity */
+.brand-mark{display:flex;align-items:center;gap:8px;padding:4px 0}
+.brand-symbol{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.7rem;font-style:italic;color:#62795d;line-height:1}
+.brand-symbol span{font-size:.8rem;color:#b96f5c;vertical-align:top;margin-left:1px}
+.brand-name{font-family:'Cormorant Garamond',Georgia,serif;font-size:1rem;letter-spacing:.015em;color:#4d5e46}
+.hero-logo{display:block;width:min(440px,88vw);height:auto;max-height:220px;object-fit:contain;margin:8px auto 18px;border-radius:8px;mix-blend-mode:multiply;filter:drop-shadow(0 9px 16px #57452a12)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.sound{background:#f5ead9f2!important;border-color:#cdb99d!important;color:#4b5e48!important;box-shadow:0 5px 18px #66513a16}
+.sound:hover{background:#e8eddf!important}
+@media(max-width:520px){.brand-name{font-size:.88rem}.hero-logo{width:min(360px,88vw);max-height:185px;margin:5px auto 12px}}
+
+
+/* FINAL COLOR GRADE — quiet botanical / soft daylight */
+:root{
+ --ink:#34423b;--plum:#4b5b51;--rose:#b98f88;--rose2:#a87972;
+ --cream:#f7f7f0;--gold:#c8b991;--muted:#748078;--paper:#f1f2e9;
+ --sage:#a8b6a4;--sage-dark:#617768;--line:#d8dfd4;--blush:#e9dcd5;
+}
+html{background:#eef1e9}
+body{color:#3e4b43;background:#eef1e9}
+body:before{background:
+ radial-gradient(ellipse at 12% 8%,rgba(255,255,248,.98),transparent 38%),
+ radial-gradient(ellipse at 88% 22%,rgba(211,222,207,.72),transparent 42%),
+ radial-gradient(ellipse at 48% 100%,rgba(232,218,210,.62),transparent 45%),
+ linear-gradient(135deg,#f4f5ed 0%,#e9eee6 48%,#f4f0e9 100%)}
+body:after{opacity:.075}
+#sky{display:none}
+.site-nav{background:rgba(246,248,241,.88);border-bottom:1px solid rgba(151,169,151,.3);box-shadow:0 5px 24px rgba(67,86,72,.045);backdrop-filter:blur(20px)}
+.brand-mark{display:flex;align-items:center;gap:9px;font-family:'DM Sans',sans-serif;font-size:.92rem;font-weight:600;letter-spacing:.015em;color:#53685a}
+.brand-symbol{display:grid;place-items:center;width:27px;height:27px;border:1px solid #a8b8a7;border-radius:50%;font-size:1rem;color:#718775}
+.brand-mark .brand-name{font-family:'DM Sans',sans-serif;font-size:.88rem;font-weight:600;letter-spacing:.015em;color:#53685a}
+.nav-links button,.nav-menu{color:#64736a}.nav-links button:hover{color:#a87972}
+.topline{background:linear-gradient(90deg,#b98f88,#d5c9a9,#8fa28e)}
+.sound{background:rgba(248,249,243,.9)!important;border-color:#d3ddd1!important;color:#53685a!important;box-shadow:0 8px 24px rgba(68,86,72,.09)!important}
+.eyebrow,.hero-kicker,.progress-label{color:#7c9280}
+h1,h2,h3,.serif{color:#3e5045}
+h1 em,h2 em,.hero-serif{color:#a77f79}
+p,.lead{color:#748078}
+.primary{background:#6f8875;color:#fffdf7;border:1px solid #6f8875;box-shadow:0 10px 26px rgba(90,117,96,.18)}
+.primary:hover{background:#5e7865;box-shadow:0 13px 30px rgba(90,117,96,.22)}
+.secondary,.back-link{background:rgba(250,251,246,.78);border-color:#cbd7ca;color:#596b5e}
+.hero-kicker{background:rgba(250,251,246,.78);border-color:#d6dfd3;color:#748477}
+.live-dot{background:#8da38d;box-shadow:0 0 0 4px rgba(141,163,141,.18)}
+.hero-photo{background:#fbfcf6;border-color:#e0e5da;box-shadow:0 18px 40px rgba(67,83,68,.14)}
+.mosaic-sticker{background:#e4eadd;color:#647a68;border-color:#d2ddce}
+.hero-meta span{color:#718076;border-color:#d4ddd2;background:rgba(250,251,246,.58)}
+.album-card,.gamepanel,.detective-card{background:rgba(250,251,246,.88);border-color:#d8e0d5;box-shadow:0 18px 45px rgba(68,86,72,.07)}
+.album-stack{background:#dce5d9}
+.album-label span,.album-head .eyebrow,.album-label b,.detective-tag{color:#879b86}
+.album-label strong,.gameprompt,.detective-card h3{color:#46594c}
+.album-label small,.album-head .lead{color:#7b877e}
+.album-photo,.photo{background:#fbfcf7;border-color:#e0e6dc;box-shadow:0 12px 28px rgba(68,86,72,.1)}
+.photo figcaption,.album-photo figcaption{color:#506254}
+.photo .caption-detail,.album-photo .caption-detail{color:#839087}
+.letter{background:#fbfcf6;border-color:#dce3d7;box-shadow:0 20px 55px rgba(68,86,72,.09)}
+.letter:before{border-color:#e4e9df}
+.letter p{color:#65736a}
+.letter:after{color:#a77f79}
+.gamechoices button{background:#f0f3eb;border-color:#d8e0d5;color:#5b6b60}
+.gamechoices button:hover,.gamechoices button:active{background:#e5ece2;border-color:#a8b9a7}
+.feedback{color:#78917d}
+.match-stats span{background:#f8faf4;border-color:#d8e1d6;color:#7a897e}.match-stats b{color:#829b84}
+.match-card{background:linear-gradient(145deg,#f9faf4,#e5ebe1);border-color:#d5dfd2}.match-card .card-back{color:#8da28c}.match-card.matched{border-color:#829b84;box-shadow:0 0 18px rgba(130,155,132,.18)}
+.mission-option{background:#fbfcf7;border-color:#dbe3d8;color:#59695f}.mission-option.correct{border-color:#91a88f;box-shadow:0 0 20px rgba(130,155,132,.18)}.mission-option.wrong{border-color:#c79a91}
+.bar{background:#dce4d9}.bar span{background:#829b84}
+.balloon:nth-child(4n+1){background:radial-gradient(circle at 32% 23%,#f5e6e1,#d6aaa1 52%,#b98f88)}
+.balloon:nth-child(4n+2){background:radial-gradient(circle at 32% 23%,#f7f0df,#d8c9a5 52%,#b8a77e)}
+.balloon:nth-child(4n+3){background:radial-gradient(circle at 32% 23%,#eef2e8,#b9c9b4 52%,#829982)}
+.balloon:nth-child(4n){background:radial-gradient(circle at 32% 23%,#e8eee8,#a8bcae 52%,#718d7b)}
+.present-box .base{background:#829982}.present-box .lid{background:#a9bba6}.present-box:before{background:#d5c69f}
+#firstGiftMessage,#giftText{color:#a77f79;background:#f8f8f1;border-color:#d7dfd3}
+.gift-box{background:linear-gradient(120deg,#829982,#637c69)}.gift-lid{background:linear-gradient(120deg,#b7c6b2,#8fa48e)}.gift-ribbon,.gift-bow{border-color:#d5c69f;background:#d5c69f}
+.ticket-card{background:#fcfcf8;border-color:#dce3d8;box-shadow:0 18px 45px rgba(68,86,72,.12)}
+.ticket-details{color:#647269}
+.wordhunt-shell,.jigsaw-shell{background:rgba(250,251,246,.92);border-color:#d9e1d6;box-shadow:0 18px 42px rgba(68,86,72,.08)}
+.wordhunt-top,.jigsaw-top{color:#7a8d7d;border-color:#dce4d9}.word-cell{background:#f0f3eb;border-color:#d7e0d5;color:#506154}.word-cell.selected{background:#d5dfd1;border-color:#91a58e}.word-cell.found{background:#78927d;border-color:#78927d;color:#fff}
+.word-clue{background:#f8faf4;border-color:#dce4d9}.word-clue b{color:#53675a}.word-clue small{color:#87938a}.word-clue.done{background:#e8eee4;border-color:#b9c9b4}
+.notebook-cover{background:#819681;box-shadow:0 24px 50px rgba(67,83,68,.18)}
+.notebook-cover-inner{background:linear-gradient(135deg,#879e88,#647f6b);border-color:#d7dfd0}
+.notebook-book{background:#d9e0d2;box-shadow:0 22px 48px rgba(67,83,68,.13)}
+.notebook-page{background-color:#fbfcf6;border-color:#dfe6da;background-image:radial-gradient(ellipse at 0 0,#fff,transparent 45%),repeating-linear-gradient(to bottom,transparent 0 31px,rgba(160,181,160,.12) 32px)}
+.notebook-page-label,.notebook-footer{color:#7d8b7e;border-color:#dce4d9}.notebook-page-label span,.notebook-doodle{color:#b28a83}
+.notebook-photo{background:#fffefa;box-shadow:0 7px 18px rgba(68,86,72,.12)}.notebook-photo figcaption{color:#506254}.notebook-photo .caption-detail{color:#849087}
+#photoModal{background:rgba(42,56,47,.94)}footer{color:#87938a}
+/* No generated birthday poster: let the real memories and typography lead. */
+.hero-logo{display:none!important}
+.welcome-mark{max-width:760px;margin:16px auto 24px;padding:12px 18px 4px;position:relative}
+.welcome-flourish{display:inline-grid;place-items:center;width:42px;height:42px;border:1px solid #cbd8c8;border-radius:50%;color:#879d88;font-size:1.2rem;margin-bottom:10px;background:rgba(250,251,246,.62)}
+.welcome-mark h1{font-size:clamp(3.5rem,9vw,6.8rem);line-height:.92;letter-spacing:-.045em;margin:8px 0 15px;color:#405247}
+.welcome-mark h1 em{display:block;margin-top:9px;font-size:1.08em;color:#a9827b}
+.welcome-note{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.15rem,2.4vw,1.5rem);font-style:italic;color:#829087;letter-spacing:.015em}
+@media(max-width:620px){.brand-mark .brand-name{font-size:.78rem}.welcome-mark{margin:8px auto 16px}.welcome-mark h1{font-size:clamp(3.15rem,13vw,4.7rem)}.sound{top:65px}}
+
+
+.word-grid{grid-template-columns:repeat(14,minmax(0,1fr));max-width:560px}.word-clues{grid-template-columns:1fr}.word-clue{align-items:flex-start}.word-clue b{font-size:.82rem;letter-spacing:0}.word-clue small{font-size:.72rem}balloon{background-size:cover!important;background-position:center!important;border:3px solid #fff9ef!important;border-radius:50% 50% 46% 46%!important;color:transparent!important;box-shadow:0 8px 22px #526b5430!important}.balloon:before{content:'';position:absolute;inset:0;background:linear-gradient(145deg,#ffffff15,#00000015);border-radius:inherit}.balloon:after{z-index:-1}@media(max-width:620px){word-grid{gap:3px}.word-cell{font-size:.68rem;border-radius:4px}}
+
+.balloon-field{max-width:900px;gap:clamp(12px,2.5vw,24px);min-height:240px}
+.balloon{background:radial-gradient(circle at 32% 23%,#fff9ed,#d9b58c 48%,#ad8067)!important;background-image:none!important;color:#fffaf2!important;border:1px solid #fff8ed!important;cursor:pointer}
+.balloon:nth-child(4n+1){background:radial-gradient(circle at 32% 23%,#fff1f2,#dba6ad 52%,#b87580)!important}
+.balloon:nth-child(4n+2){background:radial-gradient(circle at 32% 23%,#fff6df,#d8c18e 52%,#aa8b5b)!important}
+.balloon:nth-child(4n+3){background:radial-gradient(circle at 32% 23%,#f2f6ec,#a9bd9d 52%,#71866b)!important}
+.balloon:nth-child(4n){background:radial-gradient(circle at 32% 23%,#f1edf8,#b9a7d1 52%,#85739e)!important}
+.balloon:before{content:'♡';position:absolute;inset:0;display:grid;place-items:center;color:#fff9ed;font-size:1.6rem;text-shadow:0 2px 6px #0002}
+
+.balloon-reveal{margin:0;padding:7px;background:#fffdf7;border:1px solid #e5dfd2;border-radius:14px;box-shadow:0 8px 22px #526b5415;animation:revealIn .35s ease both}
+.balloon-reveal img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:9px}
+.balloon-reveal figcaption{text-align:center;color:#718071;font-size:.78rem;padding:7px 2px 2px}
+.balloon-item .balloon-reveal[hidden]{display:none!important}.balloon-item .balloon.popped{visibility:hidden;opacity:0;pointer-events:none}@keyframes revealIn{from{opacity:0;transform:translateY(10px) scale(.97)}to{opacity:1;transform:none}}
+@media(max-width:520px){.balloon-reveals{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.balloon{width:58px;height:74px}}
+</style></head>
+<body><div id="sky" aria-hidden="true"></div><div class="topline" id="topline"></div>
+<nav class="site-nav" aria-label="Birthday journey">
+  <button class="brand-mark" onclick="go('start')" aria-label="Happy Birthday to You home"><span class="brand-symbol">✿</span><span class="brand-name">Happy Birthday to You!</span></button>
+  <div class="nav-links">
+    <button onclick="go('start')">Home</button>
+    <button onclick="go('memories')">Our Story</button>
+    <button onclick="go('letter')">The Letter</button>
+    <button onclick="go('finale')">Surprise</button>
+  </div>
+  <button class="nav-menu" onclick="toggleNav()" aria-label="Toggle navigation">☰</button>
+</nav>
+<button class="sound" id="soundBtn" aria-label="Play or pause the birthday song">♫ Play our song</button>
+<audio id="birthdaySong" preload="auto" autoplay loop playsinline>
+  <source src="audio/Magale.mp3" type="audio/mpeg">
+</audio>
+<div id="confetti"></div>
+<section class="screen active" id="start"><div class="wrap">
+<div class="hero-kicker"><span class="live-dot"></span> A LITTLE BIRTHDAY SURPRISE · MADE WITH LOVE</div>
+<div class="hero-mosaic" aria-label="A few favourite memories">
+  <div class="hero-photo hero-photo-main"><img src="photos/memory-05.jpg" alt="A favourite memory with Anjuma"></div>
+  <div class="hero-photo hero-photo-side"><img src="photos/memory-02.jpg" alt="A sweet moment with Anjuma"></div>
+  <div class="hero-photo hero-photo-bottom"><img src="photos/memory-19.jpg" alt="Another memory with Anjuma"></div>
+  <span class="mosaic-sticker">made with ♡</span>
+</div>
+
+<div class="welcome-mark"><span class="welcome-flourish">✳</span><h1>Happy Birthday <em>Anjuma</em></h1><p class="welcome-note">A little world of memories, made just for you.</p></div>
+<p class="lead">A few favourite memories. A little game. Words I've been meaning to say. And one surprise I've been saving for you.</p>
+<button class="primary" onclick="go('balloons')">Start your birthday surprise <span>✦</span></button>
+<div class="hero-meta"><span>01 — memories</span><span>02 — a letter</span><span>03 — your surprise</span></div>
+</div></section>
+
+<section class="chapter" id="balloons"><div class="wrap">
+<div class="eyebrow">FIRST UP · A LITTLE GAME</div><h2>First things first.<br><em>Pop the balloons.</em></h2>
+<p class="lead">Twenty-five little balloons. Pop them to uncover 25 favourite photos.</p>
+<div class="progress-label" id="balloonCount">Balloons popped: 0 / 25</div>
+<div class="balloon-field" id="balloonsField"></div>
+<div class="balloon-reveals" id="balloonReveals" aria-live="polite"></div>
+<p class="tiny" id="balloonHint">Go on, birthday girl. Pop them all. 🎈</p>
+<div id="collectArea" style="display:none">
+<p style="color:var(--gold)">You found it! Now come collect your first gift from me. ♡</p>
+<button class="primary" onclick="showFirstGift()">Collect your gift from me 🎁</button>
+<div class="present-box" id="firstPresent" onclick="openFirstGift()" role="button" tabindex="0" aria-label="Open first gift"><div class="lid"></div><div class="base"></div><div class="ribbon"></div></div>
+<div id="firstGiftMessage">Your first gift is a little reminder…<br>you deserve to feel celebrated, today and always. ♡</div>
+<button class="primary" id="continueAfterGift" style="display:none;margin-top:22px" onclick="go('intro')">Continue your little adventure →</button>
+</div></div></section>
+
+<section class="chapter" id="intro"><div class="wrap">
+<div class="eyebrow">Prologue · Before the surprises</div><h2>First, let's see<br>what you <em>remember.</em></h2>
+<p class="lead">No pressure, Anjuma. This is a very unserious test, created by someone who thinks you're pretty wonderful.</p>
+<div class="gamepanel"><div class="progress-label">Mini game 01 · Pick your mood</div><div class="gameprompt">Choose the kind of birthday magic you want first.</div>
+<div class="gamechoices"><button onclick="chooseMood(this,'soft')">🌙 Soft & dreamy</button><button onclick="chooseMood(this,'chaos')">✨ Cute chaos</button><button onclick="chooseMood(this,'memory')">📸 Memory lane</button><button onclick="chooseMood(this,'surprise')">🎁 Straight to surprises</button></div>
+<div class="feedback" id="moodFeedback">There are no wrong answers. Just vibes.</div></div>
+<button class="primary" onclick="go('crossword')">Start the word hunt →</button>
+</div></section>
+<section class="chapter" id="crossword"><div class="wrap">
+<div class="eyebrow">BONUS CHALLENGE · WORDS WE KEEP</div><h2>A tiny <em>word hunt.</em></h2>
+<p class="lead">Find the hidden words that belong to our little memories. ♡</p>
+<div class="wordhunt-shell"><div class="wordhunt-top"><span>OUR LITTLE QUESTION GRID</span><span id="wordProgress">0 / 5 FOUND</span></div><div id="wordGrid" class="word-grid" aria-label="Word hunt grid"></div><div class="wordhunt-bottom"><div id="wordClues" class="word-clues"></div><p id="wordFeedback" class="feedback" aria-live="polite">Find all five answers in the grid. ♡</p></div></div>
+<button class="primary" id="wordContinue" disabled onclick="go('memories')">Open our notebook →</button>
+</div></section>
+<section class="chapter" id="memories"><div class="wrap">
+<div class="eyebrow">THE MEMORY ARCHIVE · 01</div><h2>One little<br><em>memory notebook.</em></h2>
+<p class="lead">Every photo, every little adventure, all in one notebook. Flip through our memories together.</p>
+<div class="notebook-cover" onclick="go('notebook')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')go('notebook')">
+<div class="notebook-rings"><i></i><i></i><i></i><i></i><i></i></div><div class="notebook-cover-inner"><span>OUR LITTLE ARCHIVE</span><strong>All the little<br><em>things that are us.</em></strong><div class="notebook-cover-photos"><img src="photos/memory-01.jpg" alt="A memory together"><img src="photos/memory-07.jpg" alt="A shared selfie"><img src="photos/memory-16.jpg" alt="An outdoor memory"></div><small>20 frames · countless feelings · ♡</small><b>OPEN OUR NOTEBOOK ↗</b></div></div>
+<button class="secondary" onclick="go('letter')">I've got something to tell you →</button></div></section>
+<section class="chapter album-screen" id="notebook"><div class="wrap">
+<div class="album-head"><button class="back-link" onclick="go('memories')">← Back to our story</button><div class="eyebrow">OUR LITTLE ARCHIVE · ONE NOTEBOOK</div><h2>All the little <em>things that are us.</em></h2><p class="lead">Every laugh, every trip, every ordinary day that became a favourite. One notebook, all our memories — and a few words tucked beside them.</p></div>
+<div class="notebook-book"><div class="notebook-spine"></div><div class="notebook-page"><div class="notebook-page-label">THE MEMORY PAGES <span>♡</span></div><div class="gallery notebook-gallery" id="notebookGallery"></div><div class="notebook-footer"><span>Collected with love, for Anjuma.</span><span>♡</span></div></div></div>
+<div class="album-bottom"><span>Twenty frames. A thousand little feelings.</span><button class="primary" onclick="go('letter')">Turn the page — a letter for you →</button></div>
+</div></section>
+<section class="chapter" id="letter"><div class="wrap"><div class="eyebrow">A PAGE I WANTED YOU TO KEEP</div><h2>A few words <em>from my heart.</em></h2>
+<div class="letter"><p>Hey Anjuma,</p><p>You’ve been asking me for a long time for a thing. For your birthday, this little surprise is my way of giving you something made with the love I have and the resources I could bring together. It may be a small thing, but every part of it carries a thought of you. I hope it makes you smile. Enjoy every bit of it.</p><p>When I look at how far we’ve come — from there to here — one thing I feel most grateful for is that you were there by my side. Through the little moments, the changes, the laughter, the difficult days and all the memories in between, your presence has meant more to me than I can put into words.</p><p>And for all the life still waiting ahead of us, I hope you’ll stay right there beside me. Wherever we go and whatever comes our way, I want you close to my heart — not just for the special days, but for all the ordinary ones too. I want more conversations, more silly laughs, more places to discover, more memories to collect, and more pages in this story that belongs to us.</p><p>From there to here, and for all the years still to come — thank you for being you, and for being by my side. I hope I get to keep you close to my heart for the rest of my life.</p><p>Happy Birthday, Anjuma.</p><p>With all my love,<br>Yours always,<br><span style="font-size:1.6rem;color:#ad654e">♡</span></p></div>
+<button class="primary" onclick="go('puzzle')">Turn the page — one more game →</button></div></section>
+<section class="chapter" id="puzzle"><div class="wrap"><div class="eyebrow">CHALLENGE 01 · PUZZLE OF US</div>
+<h2>Put our little <em>world back together.</em></h2><p class="lead">Tap two tiles to swap them. Rebuild the photo to unlock the next chapter. A tiny reminder that even mixed-up pieces can make something beautiful.</p>
+<div class="jigsaw-shell"><div class="jigsaw-top"><span>THE PUZZLE OF US</span><span id="jigsawMoves">MOVES · 0</span></div><div id="jigsawBoard" class="jigsaw-board" aria-label="Photo jigsaw puzzle"></div><p class="feedback" id="jigsawFeedback">Find where each piece belongs. You can do this, birthday girl. ♡</p></div>
+<button class="primary" id="jigsawContinue" disabled onclick="go('game')">Puzzle complete — next challenge →</button></div></section>
+<section class="chapter" id="game"><div class="wrap">
+<div class="eyebrow">CHALLENGE 01 · MEMORY MATCH</div><h2>Some things just<br><em>belong together.</em></h2>
+<p class="lead">Flip the cards and find four matching pairs. Try to do it in as few moves as possible — your memory deserves a little boss level.</p>
+<div class="match-stats"><span>PAIRS <b id="pairsFound">0 / 4</b></span><span>MOVES <b id="moveCount">0</b></span><span>BEST POSSIBLE <b>4</b></span></div>
+<div id="matchBoard" class="match-board"></div><p class="feedback" id="matchFeedback" aria-live="polite">Tap any two cards to begin.</p>
+<button class="primary" id="matchContinue" disabled onclick="go('detective')">Level complete — next challenge →</button></div></section>
+<section class="chapter" id="detective"><div class="wrap"><div class="eyebrow">CHALLENGE 02 · THE MEMORY DETECTIVE</div>
+<h2>Let's see how sharp<br>your <em>eyes are.</em></h2><p class="lead">Three photo missions. Choose the right memory to crack each clue. Every correct answer unlocks the next one.</p>
+<div class="mission-progress"><span id="missionStep">MISSION 01 / 03</span><div class="bar"><span id="missionBar"></span></div></div>
+<div class="detective-card"><div class="detective-tag" id="missionTag">CLUE 01</div><h3 id="missionQuestion">Find Anjuma in the pink dress.</h3>
+<div class="detective-options" id="missionOptions"></div><p class="feedback" id="missionFeedback" aria-live="polite">Look closely. No rush.</p>
+<button class="primary" id="missionNext" disabled onclick="nextMission()">Next clue →</button></div></div></section>
+<section class="screen" id="finale"><div class="wrap">
+<div class="eyebrow">04 / SAVED JUST FOR YOU</div><h2>The thing you wanted.<br><em>Finally, yours.</em></h2>
+<p class="lead">You made it, Anjuma. This is the little thing you've been asking me for. Open the final surprise to reveal your concert ticket.</p>
+<button class="secondary" onclick="wish()">✧ I've made my wish</button>
+<div class="gift" id="gift" role="button" tabindex="0" aria-label="Open birthday gift" onclick="openGift()"><div class="gift-bow"></div><div class="gift-lid"></div><div class="gift-box"></div><div class="gift-ribbon"></div></div>
+<p class="tiny">Tap the gift to reveal your last message.</p>
+<div id="giftText">Anjuma, you kept asking… so here it is. ♡<br><span style="font-size:1.25rem;color:var(--cream)">I know this is a little surprise, but I hope the thought behind it makes you feel on cloud nine.</span><br>Happy Birthday, my Anjuma.</div>
+<div id="ticketReveal" style="display:none">
+<h2 style="margin-top:36px">Your biggest <em>surprise.</em></h2>
+<p class="lead">A little concert night is waiting for you. Your birthday surprise is right here — your concert ticket, saved just for you.</p>
+
+<div class="ticket-card">
+<strong style="font-size:1.05rem">BENNY DAYAL Live in BENGALURU</strong>
+<div class="ticket-details">Club Gigs, Concerts · English / Hindi / Tamil<br><strong>Sunday, 29 November · 07:00 PM</strong><br>Sunburn Union Bangalore<br>Ticket type: EARLY BIRD - GA<br>Booking ID: SBUB00TJ75YBAJ<br><small>Ticket 1/2 shown in your supplied screenshot.</small></div>
+<img class="ticket-shot" src="bms-ticket-screenshot.png" alt="BookMyShow ticket screenshot provided by you">
+</div>
+
+</div>
+<div style="margin-top:30px"><button class="primary" onclick="celebrate()">Make it rain birthday magic ✨</button></div>
+<p style="margin-top:35px;font-family:'Cormorant Garamond',serif;font-size:1.55rem;color:var(--rose)">One last thing, Anjuma…<br>of all the memories we have, I'm grateful for the ones still waiting to happen. ♡</p>
+<p>Happy Birthday, my favourite kind of beautiful story.</p>
+<button class="secondary" onclick="window.scrollTo({top:0,behavior:'smooth'})">↺ Replay your story</button>
+</div></section>
+<footer>Made for Anjuma · A birthday keepsake made from memories and affection ♡</footer>
+<div id="photoModal" onclick="if(event.target===this)closeModal()"><div class="modal-inner"><img id="modalImg" alt="A memory"><p id="modalText"></p><button class="secondary" onclick="closeModal()">Back to our story</button></div></div>
+<script>
+
+
+
+const files=Array.from({length:20},(_,i)=>`photos/memory-${String(i+1).padStart(2,'0')}.jpg`);
+const photoCaptions=[
+["The mountain air","One of those views that somehow looks even better because you were standing next to me."],
+["A little closer","Proof that the best frames are the ones where we forget to pose."],
+["Just Anjuma","Some people don't need a filter. They just show up and make the whole frame softer."],
+["Our kind of adventure","A little road, a little fresh air, and a memory to keep."],
+["A favourite face","A reminder that the smallest moments can turn into the ones we revisit most."],
+["Us, being us","No grand plan. Just us, and somehow that was enough."],
+["A car-ride memory","The kind of picture that brings back the whole day in one second."],
+["Pink-hat energy","The hat was cute. The smile absolutely stole the show."],
+["A soft pink moment","If happiness had a colour, this day might be close."],
+["Little adventures","Somewhere between going places and making memories."],
+["One more selfie","A camera roll full of reasons to smile."],
+["A night to remember","Warm lights, a good day, and my favourite company."],
+["Her own kind of magic","You have a way of making ordinary things feel like a scene from a film."],
+["Pink, and lovely","A little elegance, a little mischief, all Anjuma."],
+["A quiet portrait","A page just for the person who makes so many other pages matter."],
+["Out in the world","New places feel a bit more memorable when we see them together."],
+["A beautiful day","A frame I would happily keep coming back to."],
+["One for the archive","No caption could hold the whole memory, but this is a start."],
+["A little sunshine","Some moments deserve a permanent place in the notebook."],
+["The story keeps going","Not a final page. Just another memory waiting to happen."]
+];
+const notebookGallery=document.getElementById('notebookGallery');
+if(notebookGallery)files.forEach((src,i)=>{const caption=photoCaptions[i];const fig=document.createElement('figure');fig.className='photo album-photo notebook-photo';
+fig.innerHTML=`<div class="photo-image-wrap"><img loading="lazy" src="${src}" alt="${caption[0]}"><span class="photo-index">${String(i+1).padStart(2,'0')}</span><span class="photo-open">↗</span></div><figcaption>${caption[0]}</figcaption><div class="caption-detail">${caption[1]}</div><div class="notebook-doodle">♡</div>`;
+fig.onclick=()=>{document.getElementById('modalImg').src=src;document.getElementById('modalText').textContent=caption[1];document.getElementById('photoModal').classList.add('show')};notebookGallery.appendChild(fig)});
+function closeModal(){document.getElementById('photoModal').classList.remove('show')}
+const sky=document.getElementById('sky');for(let i=0;i<110;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*4+'s';s.style.opacity=Math.random()*.7;sky.appendChild(s)}
+
+let poppedBalloons=0;
+const balloonField=document.getElementById('balloonsField');
+const balloonReveals=document.getElementById('balloonReveals');
+const balloonPhotos=[
+ 'photos/anjuma-01.jpg','photos/anjuma-02.jpg','photos/anjuma-03.jpg','photos/anjuma-04.jpg','photos/anjuma-05.png',
+ ...Array.from({length:20},(_,i)=>`photos/memory-${String(i+1).padStart(2,'0')}.jpg`)
+];
+balloonPhotos.forEach((src,i)=>{
+ const item=document.createElement('div');item.className='balloon-item';
+ const b=document.createElement('button');b.className='balloon';b.textContent='♡';
+ b.setAttribute('aria-label','Pop balloon '+(i+1));
+ const reveal=document.createElement('figure');reveal.className='balloon-reveal';reveal.hidden=true;
+ const img=document.createElement('img');img.src=src;img.alt='Birthday memory '+(i+1);img.loading='lazy';
+ const cap=document.createElement('figcaption');cap.textContent='A little memory ♡';
+ reveal.append(img,cap);
+ b.onclick=()=>{
+  if(b.classList.contains('popped'))return;
+  b.classList.add('popped');b.disabled=true;reveal.hidden=false;poppedBalloons++;
+  document.getElementById('balloonCount').textContent=`Balloons popped: ${poppedBalloons} / 25`;
+  if(navigator.vibrate)navigator.vibrate(20);
+  if(poppedBalloons===25){document.getElementById('collectArea').style.display='block';document.getElementById('balloonHint').textContent='All 25 memories are yours. Your first gift is ready. ♡'}
+  else{document.getElementById('balloonHint').textContent='One more little memory revealed. Keep going! ♡'}
+ };
+ item.append(b,reveal);balloonField.appendChild(item);
+});
+function showFirstGift(){document.getElementById('firstPresent').classList.add('show');document.getElementById('firstPresent').scrollIntoView({behavior:'smooth',block:'center'})}
+function openFirstGift(){document.getElementById('firstPresent').classList.add('open');document.getElementById('firstGiftMessage').classList.add('show');document.getElementById('continueAfterGift').style.display='inline-block'}
+document.getElementById('firstPresent').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openFirstGift()}});
+
+function toggleNav(){document.querySelector('.site-nav').classList.toggle('nav-open')}
+function go(id){document.querySelector('.site-nav')?.classList.remove('nav-open');const target=document.getElementById(id);if(!target)return;document.querySelectorAll('section.screen,section.chapter').forEach(s=>s.classList.remove('active'));target.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});if(navigator.vibrate)navigator.vibrate(18)}
+function chooseMood(btn,mood){document.querySelectorAll('.gamechoices button').forEach(b=>b.style.borderColor='');btn.style.borderColor='#f2a9c4';let msgs={soft:'Soft and dreamy it is. This story was made for a little slow-down. 🌙',chaos:'A little chaos, a lot of heart. Excellent birthday energy. ✨',memory:'A sentimental soul! Good thing I brought receipts — in photo form. 📸',surprise:'Straight to the good stuff. I respect the birthday-girl priorities. 🎁'};document.getElementById('moodFeedback').textContent=msgs[mood]}
+
+
+
+// Picture jigsaw: 3x3 photo tiles are shuffled; tap two to swap.
+const jigsawBoard=document.getElementById('jigsawBoard');
+const jigsawImage='photos/anjuma-05.png';
+let jigsawOrder=[0,1,2,3,4,5,6,7,8],jigsawMoves=0,jigsawFirst=null;
+for(let i=jigsawOrder.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[jigsawOrder[i],jigsawOrder[j]]=[jigsawOrder[j],jigsawOrder[i]]}
+if(jigsawOrder.every((v,i)=>v===i))[jigsawOrder[0],jigsawOrder[1]]=[jigsawOrder[1],jigsawOrder[0]];
+function renderJigsaw(){if(!jigsawBoard)return;jigsawBoard.innerHTML='';jigsawOrder.forEach((piece,pos)=>{const b=document.createElement('button');b.className='jigsaw-piece'+(piece===pos?' in-place':'');b.dataset.pos=pos;b.style.backgroundImage=`url("${jigsawImage}")`;b.style.backgroundSize='300% 300%';b.style.backgroundPosition=`${(piece%3)*50}% ${Math.floor(piece/3)*50}%`;b.setAttribute('aria-label',`Puzzle tile ${pos+1}`);b.onclick=()=>pickJigsaw(pos,b);jigsawBoard.appendChild(b)});if(jigsawOrder.every((v,i)=>v===i)){document.getElementById('jigsawFeedback').textContent='You put us back together. Not that we were ever really apart. ♡';document.getElementById('jigsawContinue').disabled=false}}
+function pickJigsaw(pos,btn){if(jigsawFirst===null){jigsawFirst=pos;btn.classList.add('selected');document.getElementById('jigsawFeedback').textContent='Now choose the tile you want to swap it with.';return}if(jigsawFirst===pos){btn.classList.remove('selected');jigsawFirst=null;return}const a=jigsawFirst;[jigsawOrder[a],jigsawOrder[pos]]=[jigsawOrder[pos],jigsawOrder[a]];jigsawFirst=null;jigsawMoves++;document.getElementById('jigsawMoves').textContent='MOVES · '+jigsawMoves;renderJigsaw()}
+renderJigsaw();
+// Question-led word hunt: all five answers are hidden in one grid.
+// Compact, easier word hunt with clearly placed complete answers.
+const wordItems=[
+ {word:'JACKFRUIT',question:'1. What is your favourite fruit?',cells:Array.from({length:9},(_,i)=>[i,i])},
+ {word:'PONDICHERRY',question:'2. What is your favourite trip destination?',cells:Array.from({length:11},(_,i)=>[i,13])},
+ {word:'PERFECT',question:'3. What is our favourite song?',cells:Array.from({length:7},(_,i)=>[11,i])},
+ {word:'SHOBHACITYMALL',question:'4. Where was our first date?',cells:Array.from({length:14},(_,i)=>[13,i])},
+ {word:'EARPODS',question:'5. What was my first birthday gift for you?',cells:Array.from({length:7},(_,i)=>[12,i+7])}
+];
+const wordRows=14,wordCols=14,wordLetters=Array.from({length:wordRows},()=>Array(wordCols).fill(''));
+wordItems.forEach(item=>item.cells.forEach(([r,c],i)=>{wordLetters[r][c]=item.word[i]}));
+const fillers='ANJUMABIRTHDAYSMILEHEARTMEMORYLOVE';
+for(let r=0;r<wordRows;r++)for(let c=0;c<wordCols;c++)if(!wordLetters[r][c])wordLetters[r][c]=fillers[(r*7+c*11+r+c)%fillers.length];
+const wordGrid=document.getElementById('wordGrid');let firstCell=null,foundWords=new Set();
+if(wordGrid){
+ wordLetters.forEach((row,r)=>row.forEach((letter,c)=>{const b=document.createElement('button');b.className='word-cell';b.textContent=letter;b.dataset.key=`${r},${c}`;b.setAttribute('aria-label',`Grid letter ${letter}`);b.onclick=()=>selectWordCell(b,r,c);wordGrid.appendChild(b)}));
+ const clues=document.getElementById('wordClues');
+ wordItems.forEach(item=>{const el=document.createElement('div');el.className='word-clue';el.id='clue-'+item.word;el.innerHTML=`<span>♡</span><div><b>${item.question}</b></div>`;clues.appendChild(el)});
+}
+function updateWordProgress(){const count=foundWords.size;document.getElementById('wordProgress').textContent=`${count} / 5 FOUND`;if(count===5){document.getElementById('wordContinue').disabled=false;document.getElementById('wordFeedback').textContent='You found every little answer. You know our story. ♡'}}
+function selectWordCell(btn,r,c){
+ if(btn.classList.contains('found'))return;
+ if(!firstCell){firstCell={r,c,btn};btn.classList.add('selected');document.getElementById('wordFeedback').textContent='Now tap the last letter of that word.';return}
+ const a=firstCell;
+ const picked=wordItems.find(item=>!foundWords.has(item.word)&&((a.r===item.cells[0][0]&&a.c===item.cells[0][1]&&r===item.cells.at(-1)[0]&&c===item.cells.at(-1)[1])||(a.r===item.cells.at(-1)[0]&&a.c===item.cells.at(-1)[1]&&r===item.cells[0][0]&&c===item.cells[0][1])));
+ if(picked){foundWords.add(picked.word);picked.cells.forEach(([rr,cc])=>wordGrid.querySelector(`[data-key="${rr},${cc}"]`)?.classList.add('found'));document.getElementById('clue-'+picked.word).classList.add('done');document.getElementById('wordFeedback').textContent='That’s one memory found. ♡';updateWordProgress()}
+ else{document.getElementById('wordFeedback').textContent='Not quite — try another pair of letters. ♡'}
+ wordGrid.querySelectorAll('.selected').forEach(x=>x.classList.remove('selected'));firstCell=null;
+}
+
+const matchAssets=['photos/anjuma-01.jpg','photos/anjuma-02.jpg','photos/anjuma-03.jpg','photos/anjuma-04.jpg'];
+let matchDeck=[...matchAssets,...matchAssets].map((src,i)=>({src,id:i,matched:false}));
+for(let i=matchDeck.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[matchDeck[i],matchDeck[j]]=[matchDeck[j],matchDeck[i]]}
+const matchBoard=document.getElementById('matchBoard');let openCards=[],moves=0,pairs=0,lockBoard=false;
+matchDeck.forEach((card,i)=>{const b=document.createElement('button');b.className='match-card';b.setAttribute('aria-label','Face-down memory card');b.innerHTML='<span class="card-back">♡</span><img alt="Matched memory" src="'+card.src+'">';
+b.onclick=()=>{if(lockBoard||card.matched||openCards.includes(i))return;b.classList.add('flipped');b.setAttribute('aria-label','Revealed memory');openCards.push(i);
+if(openCards.length===2){moves++;document.getElementById('moveCount').textContent=moves;const [a,c]=openCards;
+if(matchDeck[a].src===matchDeck[c].src){matchDeck[a].matched=matchDeck[c].matched=true;matchBoard.children[a].classList.add('matched');matchBoard.children[c].classList.add('matched');openCards=[];pairs++;document.getElementById('pairsFound').textContent=pairs+' / 4';document.getElementById('matchFeedback').textContent=pairs===4?`Perfect! Four pairs in ${moves} moves. Your memory is impressive. ♡`:'A match! Keep going.';if(pairs===4){document.getElementById('matchContinue').disabled=false;document.getElementById('matchContinue').textContent='You cleared level one →'}}
+else{lockBoard=true;document.getElementById('matchFeedback').textContent='Not a pair. Remember their places — the next flip might help.';setTimeout(()=>{[a,c].forEach(k=>{matchBoard.children[k].classList.remove('flipped');matchBoard.children[k].setAttribute('aria-label','Face-down memory card')});openCards=[];lockBoard=false},850)}}};matchBoard.appendChild(b)});
+const missions=[
+ {q:'Find Anjuma in the pink dress.',opts:[9,8,3],correct:9,success:'Correct. That pink moment is hard to miss. ♡'},
+ {q:'Find the two of you together with the mountains behind you.',opts:[1,13,14],correct:1,success:'Yes! You spotted the mountain memory.'},
+ {q:'Find the photo with Anjuma wearing the pink bucket hat.',opts:[8,19,15],correct:8,success:'Exactly. One more memory unlocked — and one step closer to the surprise.'}
+];
+let missionIndex=0,missionDone=new Set();
+function renderMission(){const m=missions[missionIndex];document.getElementById('missionStep').textContent=`MISSION ${String(missionIndex+1).padStart(2,'0')} / 03`;document.getElementById('missionTag').textContent=`CLUE ${String(missionIndex+1).padStart(2,'0')}`;document.getElementById('missionQuestion').textContent=m.q;document.getElementById('missionFeedback').textContent='Look closely. No rush.';document.getElementById('missionNext').disabled=true;document.getElementById('missionNext').textContent=missionIndex===2?'Unlock the final gift →':'Next clue →';document.getElementById('missionBar').style.width=(missionIndex/3*100)+'%';const box=document.getElementById('missionOptions');box.innerHTML='';
+m.opts.forEach(n=>{const b=document.createElement('button');b.className='mission-option';b.innerHTML=`<img src="photos/memory-${String(n).padStart(2,'0')}.jpg" alt="Photo choice"><span>Memory ${String(n).padStart(2,'0')}</span>`;b.onclick=()=>{if(missionDone.has(missionIndex))return;if(n===m.correct){missionDone.add(missionIndex);b.classList.add('correct');document.getElementById('missionFeedback').textContent=m.success;document.getElementById('missionNext').disabled=false;document.getElementById('missionBar').style.width=((missionIndex+1)/3*100)+'%';box.querySelectorAll('button').forEach(x=>x.disabled=true)}else{b.classList.add('wrong');document.getElementById('missionFeedback').textContent='Not that frame. Take another look — you can try again.';setTimeout(()=>b.classList.remove('wrong'),500)}};box.appendChild(b)})}
+function nextMission(){if(!missionDone.has(missionIndex))return;if(missionIndex<2){missionIndex++;renderMission()}else{go('finale')}}
+renderMission();
+function wish(){document.getElementById('gift').style.filter='drop-shadow(0 0 28px #f2a9c4)';setTimeout(()=>document.getElementById('gift').style.filter='',1300);if(navigator.vibrate)navigator.vibrate([30,40,30])}
+function openGift(){document.getElementById('gift').classList.add('open');document.getElementById('giftText').classList.add('show');document.getElementById('ticketReveal').style.display='block'}
+document.getElementById('gift').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openGift()}});
+function celebrate(){openGift();let c=document.getElementById('confetti');for(let i=0;i<110;i++){let x=document.createElement('i');x.className='confetti';x.style.left=Math.random()*100+'%';x.style.background=['#f2a9c4','#f1d6a1','#fff4ed','#bda4e8'][Math.floor(Math.random()*4)];x.style.animationDelay=Math.random()*1.3+'s';x.style.animationDuration=(2+Math.random()*2)+'s';c.appendChild(x);setTimeout(()=>x.remove(),5000)}}
+window.addEventListener('scroll',()=>{let max=document.documentElement.scrollHeight-innerHeight;document.getElementById('topline').style.width=(max>0?scrollY/max*100:0)+'%'});
+let sound=false;const birthdaySong=document.getElementById('birthdaySong');const soundBtn=document.getElementById('soundBtn');function paintSound(){soundBtn.textContent=sound?'♫ Music playing · pause':'♫ Play our song'}function startBirthdaySong(){birthdaySong.play().then(()=>{sound=true;paintSound()}).catch(()=>{sound=false;soundBtn.textContent='♫ Tap to start our song'});}function stopBirthdaySong(){birthdaySong.pause();sound=false;paintSound()}birthdaySong.addEventListener('play',()=>{sound=true;paintSound()});birthdaySong.addEventListener('pause',()=>{sound=false;paintSound()});soundBtn.onclick=()=>{if(sound)stopBirthdaySong();else startBirthdaySong()};/* Try immediately on entry; if the browser blocks autoplay, the first interaction starts it. */window.addEventListener('DOMContentLoaded',startBirthdaySong,{once:true});['pointerdown','keydown','touchstart'].forEach(evt=>window.addEventListener(evt,()=>{if(!sound)startBirthdaySong()},{once:true,passive:true}));const originalGo=go;go=function(id){if(!sound)startBirthdaySong();originalGo(id)};
+</script></body></html>
